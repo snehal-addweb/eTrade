@@ -217,9 +217,9 @@ $databases = array (
   array (
     'default' => 
     array (
-      'database' => 'addwebin_etrade',
-      'username' => 'addwebin_etrade',
-      'password' => 'etrade123',
+      'database' => 'addwebpr_etrade',
+      'username' => 'addwebpr_etrade',
+      'password' => 'addwebpr_etrade',
       'host' => 'localhost',
       'port' => '',
       'driver' => 'mysql',
