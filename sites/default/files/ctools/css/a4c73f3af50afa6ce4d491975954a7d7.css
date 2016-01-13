@@ -1,0 +1,70 @@
+.home-about-quote .panels-flexible-region {
+  padding: 0;
+}
+
+.home-about-quote .panels-flexible-region-inside {
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+}
+
+.home-about-quote .panels-flexible-region-inside-first {
+  padding-left: 0;
+}
+
+.home-about-quote .panels-flexible-region-inside-last {
+  padding-right: 0;
+}
+
+.home-about-quote .panels-flexible-column {
+  padding: 0;
+}
+
+.home-about-quote .panels-flexible-column-inside {
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+}
+
+.home-about-quote .panels-flexible-column-inside-first {
+  padding-left: 0;
+}
+
+.home-about-quote .panels-flexible-column-inside-last {
+  padding-right: 0;
+}
+
+.home-about-quote .row-page-block {
+  padding: 0 0 0.5em 0;
+  margin: 0;
+}
+
+.home-about-quote .row-page-block-last {
+  padding-bottom: 0;
+}
+
+.panels-flexible-column-home-about-quote-main {
+  float: left;
+  width: 99.0000%;
+}
+
+.home-about-quote-inside {
+  padding-right: 0px;
+}
+
+.home-about-quote {
+  width: auto;
+}
+
+.panels-flexible-region-home-about-quote-home_page_bottom_region {
+  float: left;
+  width: 49.5000%;
+}
+
+.panels-flexible-region-home-about-quote-home_page_right_region {
+  float: left;
+  width: 49.5000%;
+}
+
+.row-page-block-home-about-quote-2-inside {
+  padding-right: 0px;
+}
+

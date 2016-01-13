@@ -1,0 +1,732 @@
+[08-Jan-2016 12:21:48 Asia/Kolkata] PHP Fatal error:  Class 'RulesEventSet' not found in /home/addwebin/public_html/subdomains/etrade/sites/all/modules/rules/rules.module on line 391
+[08-Jan-2016 12:21:49 Asia/Kolkata] PHP Fatal error:  Class 'RulesEventSet' not found in /home/addwebin/public_html/subdomains/etrade/sites/all/modules/rules/rules.module on line 391
+[08-Jan-2016 12:21:50 Asia/Kolkata] PHP Fatal error:  Class 'RulesEventSet' not found in /home/addwebin/public_html/subdomains/etrade/sites/all/modules/rules/rules.module on line 391
+[08-Jan-2016 12:23:44 Asia/Kolkata] PHP Fatal error:  Class 'RulesEventSet' not found in /home/addwebin/public_html/subdomains/etrade/sites/all/modules/rules/rules.module on line 391
+[08-Jan-2016 12:26:48 Asia/Kolkata] PHP Fatal error:  Class 'RulesEventSet' not found in /home/addwebin/public_html/subdomains/etrade/sites/all/modules/rules/rules.module on line 391
+[08-Jan-2016 12:26:53 Asia/Kolkata] PHP Fatal error:  Class 'RulesEventSet' not found in /home/addwebin/public_html/subdomains/etrade/sites/all/modules/rules/rules.module on line 391
+[08-Jan-2016 12:29:40 Asia/Kolkata] PHP Fatal error:  Class 'RulesEventSet' not found in /home/addwebin/public_html/subdomains/etrade/sites/all/modules/rules/rules.module on line 391
+[08-Jan-2016 12:29:41 Asia/Kolkata] PHP Fatal error:  Class 'RulesEventSet' not found in /home/addwebin/public_html/subdomains/etrade/sites/all/modules/rules/rules.module on line 391
+[08-Jan-2016 12:33:54 Asia/Kolkata] PHP Fatal error:  Class 'RulesEventSet' not found in /home/addwebin/public_html/subdomains/etrade/sites/all/modules/rules/rules.module on line 391
+[08-Jan-2016 12:33:56 Asia/Kolkata] PHP Fatal error:  Class 'RulesEventSet' not found in /home/addwebin/public_html/subdomains/etrade/sites/all/modules/rules/rules.module on line 391
+[08-Jan-2016 12:34:29 Asia/Kolkata] PHP Fatal error:  Class 'RulesEventSet' not found in /home/addwebin/public_html/subdomains/etrade/sites/all/modules/rules/rules.module on line 391
+[08-Jan-2016 12:34:30 Asia/Kolkata] PHP Fatal error:  Class 'RulesEventSet' not found in /home/addwebin/public_html/subdomains/etrade/sites/all/modules/rules/rules.module on line 391
+[08-Jan-2016 12:35:42 Asia/Kolkata] PHP Fatal error:  require_once(): Failed opening required '/home/addwebin/public_html/subdomains/etrade/sites/all/modules/contrib/entity/includes/entity.controller.inc' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc on line 3211
+[08-Jan-2016 12:38:15 Asia/Kolkata] PHP Fatal error:  require_once(): Failed opening required '/home/addwebin/public_html/subdomains/etrade/sites/all/modules/contrib/admin_menu/admin_menu.inc' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/addwebin/public_html/subdomains/etrade/includes/menu.inc on line 525
+[08-Jan-2016 12:40:11 Asia/Kolkata] PHP Fatal error:  require_once(): Failed opening required '/home/addwebin/public_html/subdomains/etrade/sites/all/modules/contrib/admin_menu/admin_menu.inc' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/addwebin/public_html/subdomains/etrade/includes/menu.inc on line 525
+[08-Jan-2016 12:42:12 Asia/Kolkata] PHP Fatal error:  require_once(): Failed opening required '/home/addwebin/public_html/subdomains/etrade/sites/all/modules/contrib/admin_menu/admin_menu.inc' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/addwebin/public_html/subdomains/etrade/includes/menu.inc on line 525
+[08-Jan-2016 12:42:25 Asia/Kolkata] PHP Fatal error:  require_once(): Failed opening required '/home/addwebin/public_html/subdomains/etrade/sites/all/modules/contrib/admin_menu/admin_menu.inc' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/addwebin/public_html/subdomains/etrade/includes/menu.inc on line 525
+[08-Jan-2016 12:43:04 Asia/Kolkata] PHP Fatal error:  require_once(): Failed opening required '/home/addwebin/public_html/subdomains/etrade/sites/all/modules/contrib/captcha/image_captcha/image_captcha.user.inc' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/addwebin/public_html/subdomains/etrade/includes/menu.inc on line 525
+[08-Jan-2016 12:43:21 Asia/Kolkata] PHP Fatal error:  require_once(): Failed opening required '/home/addwebin/public_html/subdomains/etrade/sites/all/modules/contrib/captcha/image_captcha/image_captcha.user.inc' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/addwebin/public_html/subdomains/etrade/includes/menu.inc on line 525
+[08-Jan-2016 09:30:58 UTC] PHP Warning:  POST Content-Length of 27215190 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[11-Jan-2016 13:20:24 Asia/Kolkata] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/addwebin/public_html/subdomains/etrade/sites/all/modules/views_php/plugins/views/views_php_handler_field.inc(202) : runtime-created function on line 8
+[11-Jan-2016 13:20:24 Asia/Kolkata] PHP Fatal error:  Function name must be a string in /home/addwebin/public_html/subdomains/etrade/sites/all/modules/views_php/plugins/views/views_php_handler_field.inc on line 219
+[11-Jan-2016 13:20:45 Asia/Kolkata] PHP Parse error:  syntax error, unexpected '<' in /home/addwebin/public_html/subdomains/etrade/sites/all/modules/views_php/plugins/views/views_php_handler_field.inc(202) : runtime-created function on line 19
+[11-Jan-2016 13:20:45 Asia/Kolkata] PHP Fatal error:  Function name must be a string in /home/addwebin/public_html/subdomains/etrade/sites/all/modules/views_php/plugins/views/views_php_handler_field.inc on line 219
+[11-Jan-2016 13:24:57 Asia/Kolkata] PHP Parse error:  syntax error, unexpected '<' in /home/addwebin/public_html/subdomains/etrade/sites/all/modules/views_php/plugins/views/views_php_handler_field.inc(202) : runtime-created function on line 19
+[11-Jan-2016 13:24:57 Asia/Kolkata] PHP Fatal error:  Function name must be a string in /home/addwebin/public_html/subdomains/etrade/sites/all/modules/views_php/plugins/views/views_php_handler_field.inc on line 219
+[11-Jan-2016 16:30:57 Asia/Kolkata] PHP Fatal error:  Class 'RulesEventSet' not found in /home/addwebin/public_html/subdomains/etrade/sites/all/modules/rules/rules.module on line 391
+[11-Jan-2016 18:18:38 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:18:38 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:18:38 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:18:40 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:18:40 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:18:40 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:18:42 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:18:42 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:19:00 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:28:07 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:28:07 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:28:08 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:28:08 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:28:08 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:28:09 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:28:12 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:28:12 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:28:13 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:28:13 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:28:13 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:28:14 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:28:15 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:28:16 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:28:16 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:28:18 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:28:18 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:28:20 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:28:21 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:28:22 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:28:23 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:28:23 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:28:23 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:28:24 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:28:24 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:28:24 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:28:25 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:28:26 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:28:26 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:28:26 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:28:26 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:28:27 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:28:27 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:28:27 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:28:28 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:28:28 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:28:30 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:28:30 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:28:30 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:28:31 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:28:31 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:28:31 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:28:32 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:28:33 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:28:33 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:28:34 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:28:34 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:28:34 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:28:34 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:28:34 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:28:35 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:28:35 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:28:35 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:28:36 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:28:36 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:28:37 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:28:37 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:28:40 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:28:40 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:28:40 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:28:41 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:28:41 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:28:42 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:28:42 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:28:42 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:28:42 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:28:45 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:28:52 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 18:28:53 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc:2171
+Stack trace:
+#0 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/addwebin/public_html/subdomains/etrade/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/addwebin/public_html/subdomains/etrade/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/addwebin/public_html/subdomains/etrade/includes/bootstrap.inc(455): ThemeRegis in /home/addwebin/public_html/subdomains/etrade/includes/database/database.inc on line 2171
+[11-Jan-2016 19:39:19 Asia/Kolkata] PHP Fatal error:  Cannot use object of type stdClass as array in /home/addwebin/public_html/subdomains/etrade/sites/all/modules/views_php/plugins/views/views_php_handler_field.inc(202) : runtime-created function on line 9
+[12-Jan-2016 15:21:18 Asia/Kolkata] PHP Parse error:  syntax error, unexpected 'etrade_country_custom_form_alt' (T_STRING) in /home/addwebin/public_html/subdomains/etrade/sites/all/modules/custom/etrade_country_flags/etrade_country_flags.module on line 11
+[12-Jan-2016 15:21:20 Asia/Kolkata] PHP Parse error:  syntax error, unexpected 'etrade_country_custom_form_alt' (T_STRING) in /home/addwebin/public_html/subdomains/etrade/sites/all/modules/custom/etrade_country_flags/etrade_country_flags.module on line 11

@@ -1,0 +1,23 @@
+<?php
+
+/**
+ * @file
+ * Main file for the Etrade country module, which containg logics for adding flags for countries.
+ * 
+ * @ingroup etrade_country_custom
+ */
+
+
+function etrade_country_flags_form_alter(&$form, $form_state, $form_id) {
+	if($form_id == 'views_exposed_form'){
+
+	}
+}
+
+function etrade_country_flags_preprocess_views_exposed_form(&$vars){
+
+   //if ($variables['element']['#field_name'] == 'field_myfield') {
+   // do something
+  // }
+}
+

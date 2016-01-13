@@ -1,0 +1,5 @@
+name = Etrade Country Flag
+description = Customization for countries flag.
+package = Etrade Custom
+core = 7.x
+version = 7.x
