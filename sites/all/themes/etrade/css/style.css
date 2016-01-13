@@ -75,8 +75,8 @@ a:focus { outline: none; }
 #navbar .region-top-header {
   float: left;
   width: 100%;
-  max-width: 300px;
-  padding: 50px 0;
+  max-width: 500px;
+  padding: 50px 100px;
   color: rgba(255, 255, 255, 0.5);
   font-family: OpenSans-Italic;
   font-size: 16px;
@@ -182,6 +182,11 @@ a:focus { outline: none; }
   width: 25%;
   margin: 0;
 }
+.page-home .custom-grid .panels-flexible-region-last img {
+  height: auto;
+  width: 100%;
+  max-width: 295px;
+}
 .home-slider-form .panels-flexible-region-last ul {
   padding: 0;
   list-style: none;
@@ -189,7 +194,7 @@ a:focus { outline: none; }
 .home-slider-form .panels-flexible-region-last li a {
   color: #AFAFAF;
 }
-.logged-in .home-slider-form .panels-flexible-region-first {
+.logged-in #block-md-slider-home-page-slider {
   width: 100%;
   margin: 0;
 }
@@ -233,6 +238,7 @@ a:focus { outline: none; }
 .home-about-quote .panels-flexible-region-first .pane-views-how-it-works-block-1 {
   display: inline-block;
   width: 100%;
+  margin: 20px 0 0;
 }
 .home-about-quote .panels-flexible-region-first .pane-views-how-it-works-block-1 .pane-content {
   display: inline-block;
@@ -268,12 +274,15 @@ a:focus { outline: none; }
 }
 .title-info {
   display: inline-block;
+  width: 100%;
+  padding-bottom: 5px;
   color: #88898B;
-  background-image: url('../images/booted-line.png');
+  border-bottom: 2px dotted #ccc;
+  /*background-image: url('../images/booted-line.png');
   background-size: 300px 2px;
   background-repeat: no-repeat;
   background-position: bottom;
-  content: "";
+  content: "";*/
 }
 .views-more-link {
   display: inline-block;
@@ -307,6 +316,7 @@ a:focus { outline: none; }
 /* Get a Quote */
 .get-a-qoute {
   display: inline-block;
+  width: 100%;
   padding: 15px;
   border: 1px solid #b0b0b0;
 }
@@ -418,6 +428,15 @@ a:focus { outline: none; }
   width: 100%;
   padding: 30px 0;
   background-color: #F3F4F9;
+}
+.main-custom-content {
+  float: left;
+  width: calc(70% - 20);
+  margin: 0 20px 0 0;
+}
+.main-custom-rightbar {
+  float: left;
+  width: 30%;
 }
 
 /* Breadcrumb */
@@ -557,6 +576,9 @@ a:focus { outline: none; }
 .input-rc input[type="radio"]:checked + .input-rc-span {
   background: url('../images/radio-checked.png') no-repeat;
 }
+
+/* Select dropdown */
+
 /* Error message */
 .messages.error ul {
   padding-top: 10px;
@@ -577,6 +599,10 @@ a:focus { outline: none; }
   font-size: 32px;
 }
 #user-login-block-form-fields > ul { display: none; }
+#user-login-block-form-fields  .form-actions {
+  padding-bottom: 0;
+  margin: 0;
+}
 #user-login-block-form-fields .captcha {
   display: inline-block;
   width: 100%;  
@@ -673,9 +699,10 @@ a:focus { outline: none; }
   float: left;
   width: 50%;
   padding-right: 130px;
-  /*margin-right: 4%;*/
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
 }
-.page-user-edit #edit-timezone { display: none; }
 /*.group-user-profile-right { margin-right: 0; }*/
 .group-user-profile-left .field-type-location fieldset {
   border: none;
@@ -706,7 +733,15 @@ a:focus { outline: none; }
     width: 100%
   }
   /* End */
-  
+
+  /* Home page */
+  .home-about-quote .about-image,
+  .home-about-quote .about-text { width: 100%; }
+  .home-about-quote .about-image { margin: 0 0 20px 0;}
+  /* End */
+
+  /* footer */
+  .footer #block-block-5 img { width: 100%; }
 } /* 1200px */
 
 /* Tablet and i-pad landscape & portrait view */
@@ -718,11 +753,16 @@ a:focus { outline: none; }
 @media screen and (max-width: 992px) {
 
   /* Home page */
-  .home-slider-form .panels-flexible-region-first {
+   .page-home #block-md-slider-home-page-slider,
+  .page-home .custom-grid .panels-flexible-region-first {
     width: 100%;
     margin-right: 0;
   }
-  .home-slider-form .panels-flexible-region-last { width: 100%; }
+  .page-home #block-user-login,
+  .page-home .custom-grid .panels-flexible-region-last  { width: 100%; }
+  .page-home .custom-grid .panels-flexible-region-last { text-align: center; }
+
+  /* End */
 
   /* Registration page */
   .page-user-register .custom-grid  > section.col-sm-9 {
