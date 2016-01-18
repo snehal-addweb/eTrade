@@ -19,6 +19,11 @@ function etrade_misc_node_presave($node){
 				$user->field_profile_status1[LANGUAGE_NONE][0]['value'] = 1;
 				user_save($user);
 		}
+		else {
+
+				$user->field_profile_status1[LANGUAGE_NONE][0]['value'] = 0;
+				user_save($user);	
+		}
 	}
 }
 
