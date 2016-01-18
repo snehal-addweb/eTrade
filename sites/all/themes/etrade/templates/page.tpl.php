@@ -186,8 +186,10 @@
     <?php print render($page['footer']); ?>
   </div>
   <div class="footer-full-container">
-    <?php if (!empty($page['footer_inner'])): ?>
-        <?php print render($page['footer_inner']); ?>
-   <?php endif; ?>
+    <div class="container">
+      <?php if (!empty($page['footer_inner'])): ?>
+          <?php print render($page['footer_inner']); ?>
+     <?php endif; ?>
+    </div>
   </div>
 </footer>
