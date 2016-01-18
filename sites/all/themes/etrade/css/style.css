@@ -548,7 +548,7 @@ a:focus { outline: none; }
 }
 .quicktabs-tabs li a:hover,
 .quicktabs-tabs li a:focus { text-decoration: none; }
-#quicktabs-tab-dashboard-1 { display: none;}
+/*#quicktabs-tab-dashboard-1 { display: none;}*/
 #edit-timezone { display: none;}
 /* End */
 
@@ -823,6 +823,7 @@ input[type="file"] + .input-group-btn button {
 /**
  * Profile page
  */
+.node-commodity,
 .view-user-profile .views-field-view {
   display: inline-block;
   width: 100%;
@@ -830,6 +831,7 @@ input[type="file"] + .input-group-btn button {
   padding: 20px;
   background-color: #fff;
 }
+.node-commodity .field,
 .view-user-profile .views-field-view .views-field {
   display: inline-block;
   width: 100%;
@@ -837,18 +839,51 @@ input[type="file"] + .input-group-btn button {
   border-bottom: 1px dashed #ccc;
   color: #000;
 }
+.node-commodity .field:last-child,
 .view-user-profile .views-field-view .views-field:last-child { border: none; }
+
+.node-commodity .field .field-label,
 .view-user-profile .views-field-view .views-field .views-label {
   display: inline-block;
-  min-width: 330px;
+  max-width: 330px;
+  width: 100%;
   font-family: OpenSans-Semibold;
   text-transform: uppercase;
+  vertical-align: top;
+  font-weight: normal;
 }
+.node-commodity .field .field-items,
 .view-user-profile .views-field-view .views-field .field-content {
   display: inline-block;
+  width: -webkit-calc(100% - 340px);
+  width:    -moz-calc(100% - 340px);
+  width:         calc(100% - 340px);
+  vertical-align: top;
+}
+.node-commodity .field .field-items img {
+  width: 150px;
+  height: auto;
+}
+/* Commodities */
+.view-countrywise-commodities {
+  display: inline-block;
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+}
+.view-countrywise-commodities .user-name {
+  display: inline-block;
+  font-size: 18px;
+  text-transform: capitalize;
+  margin-right: 10px;
+}
+.view-countrywise-commodities .view-empty {
+  margin: 20px 0;
+  font-size: 16px;
+}
+.view-countrywise-commodities .user-link {
 
 }
-/* End */
 
 
 /**
@@ -862,6 +897,17 @@ input[type="file"] + .input-group-btn button {
   background-color: transparent;
   border: none;
   box-shadow: none;
+}
+.group-user-profile-left label,
+.group-user-profile-left .form-type-select  label {
+  width: 100%;
+}
+.group-user-profile-left .form-type-select select {
+  /*float: left;*/
+  width: 100%;
+}
+.group-user-profile-left .form-type-select .input-group-addon {
+  display: none;
 }
 /*.group-user-profile-right { margin-right: 0; }*/
 .group-user-profile-left .field-type-location fieldset {
@@ -983,6 +1029,19 @@ input[type="file"] + .input-group-btn button {
   }
   /* End */
 
+  /* Profile page */
+  .view-user-profile .views-field-view .views-field {
+    font-size: 14px;
+  }
+  .view-user-profile .views-field-view .views-field .views-label {
+    max-width: 300px;
+  }
+  .view-user-profile .views-field-view .views-field .field-content {
+    width: -webkit-calc(100% - 310px);
+    width:    -moz-calc(100% - 310px);
+    width:         calc(100% - 310px);
+  }
+  /* End */
 } /* 992px */
 
 /* Mobile landscape & portrait view */
