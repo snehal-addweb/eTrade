@@ -9,9 +9,10 @@ jQuery(document).ready(function() {
   // User Login Page Header design
   jQuery('#block-user-login .block-title').html( "<span class='red-text'>User</span>Login" );
 
-  // Custom radio button design
-  jQuery('input[type="radio"]').wrap('<div class="input-rc"></div>');
+  /* Custom radio button & Checkbox design */
+  jQuery('input[type="radio"], input[type="checkbox"]').wrap('<div class="input-rc"></div>');
   jQuery('.input-rc').append('<span class="input-rc-span"></span>');
+  /* End */
 
   jQuery('#views-exposed-form-countrywise-commodities-page div.location_auto_country a').click(function() {
 	  jQuery('.view-countrywise-commodities #views-exposed-form-countrywise-commodities-page select#edit-country option').each(function(){
