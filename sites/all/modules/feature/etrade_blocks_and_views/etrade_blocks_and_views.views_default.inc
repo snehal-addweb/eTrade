@@ -880,14 +880,6 @@ $commodity_link = $base_url .\'/node/add/commodity\';
   $handler->display->display_options['fields']['picture']['field'] = 'picture';
   $handler->display->display_options['fields']['picture']['label'] = '';
   $handler->display->display_options['fields']['picture']['element_label_colon'] = FALSE;
-  /* Field: User: Edit link */
-  $handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
-  $handler->display->display_options['fields']['edit_node']['table'] = 'users';
-  $handler->display->display_options['fields']['edit_node']['field'] = 'edit_node';
-  $handler->display->display_options['fields']['edit_node']['label'] = '';
-  $handler->display->display_options['fields']['edit_node']['element_class'] = 'user-profile-dashboard-link';
-  $handler->display->display_options['fields']['edit_node']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['edit_node']['text'] = 'Edit Profile';
   /* Field: Global: PHP */
   $handler->display->display_options['fields']['php']['id'] = 'php';
   $handler->display->display_options['fields']['php']['table'] = 'views';
@@ -907,15 +899,24 @@ if(isset($result) && !empty($result)){
 	foreach ($result as $key => $value) {
 		$nid = $value->nid;
 	}
-	$profilelink = \'<a href="\'.$base_url.\'/node\'. \'/\' . $nid .\'/edit">Edit Trade Profile</a>\';
+	$profilelink = \'<a href="\'.$base_url.\'/node\'. \'/\' . $nid .\'/edit">Edit Profile</a>\';
 }
 else{
-	$profilelink = \'<a href="\'.$base_url.\'/node/add/user-profile">Create Trade Profile</a>\';
+	$profilelink = \'<a href="\'.$base_url.\'/node/add/user-profile">Create Profile</a>\';
 }
 echo $profilelink;
 ?>';
   $handler->display->display_options['fields']['php']['use_php_click_sortable'] = '0';
   $handler->display->display_options['fields']['php']['php_click_sortable'] = '';
+  /* Field: Global: View */
+  $handler->display->display_options['fields']['view']['id'] = 'view';
+  $handler->display->display_options['fields']['view']['table'] = 'views';
+  $handler->display->display_options['fields']['view']['field'] = 'view';
+  $handler->display->display_options['fields']['view']['label'] = '';
+  $handler->display->display_options['fields']['view']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['view']['view'] = 'user_trade_profile';
+  $handler->display->display_options['fields']['view']['display'] = 'block_1';
+  $handler->display->display_options['fields']['view']['arguments'] = '[!uid]';
   /* Sort criterion: User: Created date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'users';
@@ -973,21 +974,88 @@ echo $profilelink;
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Field: Content: Type of Company */
-  $handler->display->display_options['fields']['field_company_type']['id'] = 'field_company_type';
-  $handler->display->display_options['fields']['field_company_type']['table'] = 'field_data_field_company_type';
-  $handler->display->display_options['fields']['field_company_type']['field'] = 'field_company_type';
-  $handler->display->display_options['fields']['field_company_type']['label'] = '';
-  $handler->display->display_options['fields']['field_company_type']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_company_type']['type'] = 'taxonomy_term_reference_plain';
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   /* Field: Field: Company Name */
   $handler->display->display_options['fields']['field_company_name']['id'] = 'field_company_name';
   $handler->display->display_options['fields']['field_company_name']['table'] = 'field_data_field_company_name';
   $handler->display->display_options['fields']['field_company_name']['field'] = 'field_company_name';
-  $handler->display->display_options['fields']['field_company_name']['label'] = '';
-  $handler->display->display_options['fields']['field_company_name']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_company_name']['empty'] = '-';
+  /* Field: Content: Type of Company */
+  $handler->display->display_options['fields']['field_company_type']['id'] = 'field_company_type';
+  $handler->display->display_options['fields']['field_company_type']['table'] = 'field_data_field_company_type';
+  $handler->display->display_options['fields']['field_company_type']['field'] = 'field_company_type';
+  $handler->display->display_options['fields']['field_company_type']['type'] = 'taxonomy_term_reference_plain';
+  /* Field: Content: Address of company */
+  $handler->display->display_options['fields']['field_address_company']['id'] = 'field_address_company';
+  $handler->display->display_options['fields']['field_address_company']['table'] = 'field_data_field_address_company';
+  $handler->display->display_options['fields']['field_address_company']['field'] = 'field_address_company';
+  $handler->display->display_options['fields']['field_address_company']['empty'] = '-';
+  /* Field: Location: City */
+  $handler->display->display_options['fields']['city']['id'] = 'city';
+  $handler->display->display_options['fields']['city']['table'] = 'location';
+  $handler->display->display_options['fields']['city']['field'] = 'city';
+  $handler->display->display_options['fields']['city']['empty'] = '-';
+  /* Field: Location: Country */
+  $handler->display->display_options['fields']['country']['id'] = 'country';
+  $handler->display->display_options['fields']['country']['table'] = 'location';
+  $handler->display->display_options['fields']['country']['field'] = 'country';
+  $handler->display->display_options['fields']['country']['empty'] = '-';
+  /* Field: Location: Postal Code */
+  $handler->display->display_options['fields']['postal_code']['id'] = 'postal_code';
+  $handler->display->display_options['fields']['postal_code']['table'] = 'location';
+  $handler->display->display_options['fields']['postal_code']['field'] = 'postal_code';
+  $handler->display->display_options['fields']['postal_code']['empty'] = '-';
+  /* Field: Content: Tax Registration no. */
+  $handler->display->display_options['fields']['field_tax_registration_no_']['id'] = 'field_tax_registration_no_';
+  $handler->display->display_options['fields']['field_tax_registration_no_']['table'] = 'field_data_field_tax_registration_no_';
+  $handler->display->display_options['fields']['field_tax_registration_no_']['field'] = 'field_tax_registration_no_';
+  $handler->display->display_options['fields']['field_tax_registration_no_']['empty'] = '-';
+  /* Field: Content: Phone Number */
+  $handler->display->display_options['fields']['field_phone_number']['id'] = 'field_phone_number';
+  $handler->display->display_options['fields']['field_phone_number']['table'] = 'field_data_field_phone_number';
+  $handler->display->display_options['fields']['field_phone_number']['field'] = 'field_phone_number';
+  $handler->display->display_options['fields']['field_phone_number']['empty'] = '-';
+  /* Field: Content: Address of Authorized Person */
+  $handler->display->display_options['fields']['field_address_of_authorized_pers']['id'] = 'field_address_of_authorized_pers';
+  $handler->display->display_options['fields']['field_address_of_authorized_pers']['table'] = 'field_data_field_address_of_authorized_pers';
+  $handler->display->display_options['fields']['field_address_of_authorized_pers']['field'] = 'field_address_of_authorized_pers';
+  $handler->display->display_options['fields']['field_address_of_authorized_pers']['empty'] = '-';
+  /* Field: Content: Email Address */
+  $handler->display->display_options['fields']['field_email_address']['id'] = 'field_email_address';
+  $handler->display->display_options['fields']['field_email_address']['table'] = 'field_data_field_email_address';
+  $handler->display->display_options['fields']['field_email_address']['field'] = 'field_email_address';
+  $handler->display->display_options['fields']['field_email_address']['empty'] = '-';
+  /* Field: Content: Authorized Person */
+  $handler->display->display_options['fields']['field_authorized_person']['id'] = 'field_authorized_person';
+  $handler->display->display_options['fields']['field_authorized_person']['table'] = 'field_data_field_authorized_person';
+  $handler->display->display_options['fields']['field_authorized_person']['field'] = 'field_authorized_person';
+  $handler->display->display_options['fields']['field_authorized_person']['empty'] = '-';
+  /* Field: Content: Landline no. of Company */
+  $handler->display->display_options['fields']['field_landline_no_of_company']['id'] = 'field_landline_no_of_company';
+  $handler->display->display_options['fields']['field_landline_no_of_company']['table'] = 'field_data_field_landline_no_of_company';
+  $handler->display->display_options['fields']['field_landline_no_of_company']['field'] = 'field_landline_no_of_company';
+  $handler->display->display_options['fields']['field_landline_no_of_company']['empty'] = '-';
+  /* Field: Content: Registration Certificate Of Company */
+  $handler->display->display_options['fields']['field_registration_certificate']['id'] = 'field_registration_certificate';
+  $handler->display->display_options['fields']['field_registration_certificate']['table'] = 'field_data_field_registration_certificate';
+  $handler->display->display_options['fields']['field_registration_certificate']['field'] = 'field_registration_certificate';
+  $handler->display->display_options['fields']['field_registration_certificate']['empty'] = '-';
+  $handler->display->display_options['fields']['field_registration_certificate']['click_sort_column'] = 'fid';
+  /* Field: Content: ID Proof of Authorized Person */
+  $handler->display->display_options['fields']['field_id_proof_of_authorized']['id'] = 'field_id_proof_of_authorized';
+  $handler->display->display_options['fields']['field_id_proof_of_authorized']['table'] = 'field_data_field_id_proof_of_authorized';
+  $handler->display->display_options['fields']['field_id_proof_of_authorized']['field'] = 'field_id_proof_of_authorized';
+  $handler->display->display_options['fields']['field_id_proof_of_authorized']['empty'] = '-';
+  $handler->display->display_options['fields']['field_id_proof_of_authorized']['click_sort_column'] = 'fid';
+  /* Field: Content: Address Proof of Company Address */
+  $handler->display->display_options['fields']['field_address_proof_of_company']['id'] = 'field_address_proof_of_company';
+  $handler->display->display_options['fields']['field_address_proof_of_company']['table'] = 'field_data_field_address_proof_of_company';
+  $handler->display->display_options['fields']['field_address_proof_of_company']['field'] = 'field_address_proof_of_company';
+  $handler->display->display_options['fields']['field_address_proof_of_company']['empty'] = '-';
+  $handler->display->display_options['fields']['field_address_proof_of_company']['click_sort_column'] = 'fid';
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
