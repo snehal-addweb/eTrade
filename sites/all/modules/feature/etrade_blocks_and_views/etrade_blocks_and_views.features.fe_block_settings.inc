@@ -151,7 +151,7 @@ function etrade_blocks_and_views_default_fe_block_settings() {
         'region' => 'footer',
         'status' => 1,
         'theme' => 'etrade',
-        'weight' => -17,
+        'weight' => -18,
       ),
       'seven' => array(
         'region' => '',
@@ -189,7 +189,7 @@ function etrade_blocks_and_views_default_fe_block_settings() {
         'region' => 'footer',
         'status' => 1,
         'theme' => 'etrade',
-        'weight' => -16,
+        'weight' => -17,
       ),
       'seven' => array(
         'region' => '',
