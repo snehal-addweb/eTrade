@@ -10,6 +10,9 @@
 
   Drupal.behaviors.form_placeholder = {
     attach: function(context, settings) {
+      if (!settings.hasOwnProperty('form_placeholder')) {
+       settings = Drupal.settings;
+      }
       var include = settings.form_placeholder.include;
       if (include) {
         include += ', ';
