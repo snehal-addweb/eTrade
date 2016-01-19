@@ -425,7 +425,13 @@ a:focus { outline: none; }
   font-family: Arial;
   content: "";
 }
-.footer a { color: #e2eaf2; }
+.footer a {
+  color: #e2eaf2;
+}
+.footer .nav > li > a {
+  padding-left: 0;
+  padding-right: 0;
+}
 .footer li a:hover,
 .footer li a:focus {
   background-color: transparent;
@@ -684,6 +690,40 @@ input[type="file"] + .input-group-btn button {
   background: url('../images/radio-checked.png');
   background-repeat: no-repeat;
 }
+
+/* Commodity page radio butoon design */
+.ctools-auto-submit-full-form .form-radios .form-type-radio {
+  margin: 0 -1px 0 0;
+  padding: 0;
+}
+.ctools-auto-submit-full-form .bef-select-as-radios {
+  border-bottom: 5px solid #fff;
+}
+.ctools-auto-submit-full-form .form-radios .form-type-radio label {
+  display: inline-block;
+  padding: 10px 30px;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #ddd;
+  background-color: #F3F4F9;
+  -webkit-box-shadow: 1px 0 0 0 rgba(0, 0, 0, 0.2);
+     -moz-box-shadow: 1px 0 0 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 0 0 0 rgba(0, 0, 0, 0.2);
+}
+.ctools-auto-submit-full-form .form-radios .form-type-radio label.radio-active {
+  border-top: none;
+  border-bottom: 1px solid #408fc4;
+  background-color: #63B2F5;
+  color: #fff;
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
+}
+.ctools-auto-submit-full-form .form-radios .form-type-radio.active {}
+.ctools-auto-submit-full-form .form-radios .form-type-radio .input-rc {
+  /*width: 0;
+  opacity: 0;*/
+}
+/* -------------------------------------- */
 
 /* Checkbox button*/
 .form-type-checkbox label { padding: 0; }
