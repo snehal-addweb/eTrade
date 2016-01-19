@@ -14,6 +14,29 @@ jQuery(document).ready(function() {
   jQuery('.input-rc').append('<span class="input-rc-span"></span>');
   /* End */
 
+  /* Custom input file design */
+  jQuery('input[type="file"]').wrap('<div class="input-file"><div class="input-file-sub"></div></div>');
+  jQuery('.input-file').prepend('<span class="input-file-name"></span>');
+
+  /* Get select file name value */
+  jQuery('.input-file-sub input').change(function() {
+  var filename = jQuery(this).val();
+  jQuery(this).parent().parent().children(".input-file-name").text(filename);
+  });
+  /* End */
+
+  jQuery(document).ajaxComplete(function() {
+    jQuery('.input-file').removeClass('input-file');
+    jQuery('input[type="file"]').unwrap('<div class="input-file"><div class="input-file-sub"></div></div>');
+    jQuery('.input-file-name').remove('.input-file-name');
+    jQuery('input[type="file"]').wrap('<div class="input-file"><div class="input-file-sub"></div></div>');
+    jQuery('.input-file,').prepend('<span class="input-file-name"></span>');
+    jQuery('.input-file-sub input').change(function() {
+      var filename = jQuery(this).val();
+      jQuery(this).parents().children(".input-file-name").text(filename);
+    });
+  });
+
   jQuery('#views-exposed-form-countrywise-commodities-page div.location_auto_country a').click(function() {
 	  jQuery('.view-countrywise-commodities #views-exposed-form-countrywise-commodities-page select#edit-country option').each(function(){
 
