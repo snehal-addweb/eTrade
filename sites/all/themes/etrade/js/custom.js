@@ -7,6 +7,7 @@ jQuery(document).ready(function() {
   
   // User Login Page Header design
   jQuery('#block-user-login .block-title').html( "<span class='red-text'>User</span>Login" );
+
   /* Custom radio button & Checkbox design */
   jQuery('input[type="radio"], input[type="checkbox"]').wrap('<div class="input-rc"></div>');
   jQuery('.input-rc').append('<span class="input-rc-span"></span>');
@@ -28,11 +29,15 @@ jQuery(document).ready(function() {
     jQuery('input[type="file"]').unwrap('<div class="input-file"><div class="input-file-sub"></div></div>');
     jQuery('.input-file-name').remove('.input-file-name');
     jQuery('input[type="file"]').wrap('<div class="input-file"><div class="input-file-sub"></div></div>');
-    jQuery('.input-file,').prepend('<span class="input-file-name"></span>');
+    jQuery('.input-file').prepend('<span class="input-file-name"></span>');
     jQuery('.input-file-sub input').change(function() {
       var filename = jQuery(this).val();
       jQuery(this).parents().children(".input-file-name").text(filename);
     });
+   /* Custom radio button & Checkbox design */
+    jQuery('input[type="radio"], input[type="checkbox"]').wrap('<div class="input-rc"></div>');
+    jQuery('.input-rc').append('<span class="input-rc-span"></span>');
+  /* End */
   });
 
   jQuery('#views-exposed-form-countrywise-commodities-page div.location_auto_country a').click(function() {
