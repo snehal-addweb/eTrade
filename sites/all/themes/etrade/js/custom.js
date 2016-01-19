@@ -1,6 +1,5 @@
 jQuery(document).ready(function() {
   jQuery('.navbar ul.menu').addClass("navbar-nav");
-
   // User Register Page Header design 
   jQuery('.page-user-register .main-white-header div.container .page-header').html( "<span class='red-text'>User</span>Account" );
   jQuery('.not-logged-in.page-user .main-white-header div.container .page-header').html( "<span class='red-text'>User</span>Account" );
@@ -8,7 +7,6 @@ jQuery(document).ready(function() {
   
   // User Login Page Header design
   jQuery('#block-user-login .block-title').html( "<span class='red-text'>User</span>Login" );
-
   /* Custom radio button & Checkbox design */
   jQuery('input[type="radio"], input[type="checkbox"]').wrap('<div class="input-rc"></div>');
   jQuery('.input-rc').append('<span class="input-rc-span"></span>');
@@ -60,5 +58,4 @@ jQuery(document).ready(function() {
 	      });
   	});
  	});
-
 });
