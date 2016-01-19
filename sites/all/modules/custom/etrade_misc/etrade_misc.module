@@ -9,7 +9,6 @@
 
 
 function etrade_misc_node_presave($node){
-
 	global $user;
 	if($node->type == 'user_profile'){
 		$user = user_load($user->uid);
@@ -18,7 +17,7 @@ function etrade_misc_node_presave($node){
 		}
 		else{
 			if(in_array('authenticated user', $user->roles)){
-				if(!empty($node->field_company_name[LANGUAGE_NONE]) && !empty($node->field_company_type[LANGUAGE_NONE]) && !empty($node->field_address_company[LANGUAGE_NONE]) && !empty($node->field_state[LANGUAGE_NONE]) && !empty($node->field_landline_no_of_company[LANGUAGE_NONE]) && !empty($node->field_tax_registration_no_[LANGUAGE_NONE]) && !empty($node->field_authorized_person[LANGUAGE_NONE]) && !empty($node->field_address_of_authorized_pers[LANGUAGE_NONE]) && !empty($node->field_phone_number[LANGUAGE_NONE]) && !empty($node->field_email_address[LANGUAGE_NONE]) && (!empty($node->field_registration_certificate[LANGUAGE_NONE]) || !empty($node->field_address_proof_of_company[LANGUAGE_NONE]) || !empty($node->field_id_proof_of_authorized[LANGUAGE_NONE]))) {	
+				if(!empty($node->field_company_name[LANGUAGE_NONE]) && !empty($node->field_company_type[LANGUAGE_NONE]) && !empty($node->field_address_company[LANGUAGE_NONE]) && !empty($node->field_state[LANGUAGE_NONE]) && !empty($node->field_landline_no_of_company[LANGUAGE_NONE]) && !empty($node->field_tax_registration_no_[LANGUAGE_NONE]) && !empty($node->field_authorized_person[LANGUAGE_NONE]) && !empty($node->field_address_of_authorized_pers[LANGUAGE_NONE]) && !empty($node->field_phone_number[LANGUAGE_NONE]) && !empty($node->field_email_address[LANGUAGE_NONE]) && !empty($node->field_state[LANGUAGE_NONE][0]['city']) && !empty($node->field_state[LANGUAGE_NONE][0]['province']) && !empty($node->field_state[LANGUAGE_NONE][0]['country']) && !empty($node->field_state[LANGUAGE_NONE][0]['postal_code']) && (!empty($node->field_registration_certificate[LANGUAGE_NONE]) || !empty($node->field_address_proof_of_company[LANGUAGE_NONE]) || !empty($node->field_id_proof_of_authorized[LANGUAGE_NONE]))) {	
 					$user->field_profile_status1[LANGUAGE_NONE][0]['value'] = 1;
 					user_save($user);
 					}
@@ -36,7 +35,7 @@ function etrade_misc_form_alter(&$form, &$form_state, $form_id) {
 	global $base_url;
 	if($form_id == 'user_profile_node_form'){
 		$userlink = $base_url . '/user/'.$user->uid.'/edit'; 
-		$form['field_id_proof_of_authorized']['#suffix'] = '<a name="change-pass" href="'.$userlink.'">Change Password</a>';
+		$form['field_id_proof_of_authorized']['#suffix'] = '<a class="change-pass" href="'.$userlink.'">Change Password</a>';
  	}
 
  	if($form_id == 'user_login_block' || $form_id == 'user_login'){
@@ -46,6 +45,9 @@ function etrade_misc_form_alter(&$form, &$form_state, $form_id) {
  	if($form_id == 'user_register_form'){
  		$form['actions']['submit']['#value'] = 'Register Now';
  		$form['account']['mail']['#title'] = 'Email';
+ 	}
+ 	if($form_id == 'webform_client_form_5') {
+ 		$form['actions']['submit']['#value'] = 'Submit Quote';
  	}
 
 }

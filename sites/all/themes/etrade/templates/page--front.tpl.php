@@ -127,8 +127,19 @@
   </div>
   <div class="container">
     <?php print render($title_prefix); ?>
-    <?php if (!empty($title)): ?>
-      <h1 class="page-header"><?php print $title; ?></h1>
+    <?php if (!empty($title)): 
+
+    $title_explode = explode(' ', $title,2);
+
+    if(isset($title_explode[1])) {
+      $title_explode = explode(' ', $title,2);?><h1 class="page-header"><span class='red-text'>
+        <?php print $title_explode[0]; ?></span><?php print $title_explode[1];?></h1><?php
+    }
+    else { 
+     ?><h1 class="page-header"><span class='red-text'><?php print $title_explode[0]; ?></span></h1><?php
+      }
+    ?>
+
     <?php endif; ?>
     <?php print render($title_suffix); ?>
     <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
