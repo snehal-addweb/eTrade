@@ -43,5 +43,9 @@ function etrade_misc_form_alter(&$form, &$form_state, $form_id) {
  		$form['actions']['submit']['#value'] = 'Login';
  		$form['remember_me']['#title'] = 'Remember Me';
  	}
+ 	if($form_id == 'user_register_form'){
+ 		$form['actions']['submit']['#value'] = 'Register Now';
+ 		$form['account']['mail']['#title'] = 'Email';
+ 	}
 
 }

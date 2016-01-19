@@ -50,4 +50,3 @@ jQuery(document).ready(function() {
  	});
 ​
 });
-Add Comment
