@@ -367,6 +367,13 @@ a:focus { outline: none; }
 .get-a-qoute label { display: none; }
 .get-a-qoute .pane-content input {
   border: none;
+  min-height: 34px;
+}
+.get-a-qoute  textarea {
+  max-height: 90px;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
 }
 .get-a-qoute .pane-content .form-submit {
   background-color: #63B2F5;
@@ -572,25 +579,40 @@ em {
   margin: 0 0 5px 0;
 }
 .trade-profile-dashboard-link {}
-.quicktabs-tabs li {
+ul.quicktabs-tabs li {
   display: inline-block;
   padding: 0;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+  -webkit-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.2);
+     -moz-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.2);
 }
 .quicktabs-tabs li a {
   display: inline-block;
-  padding: 10px;
+  padding: 13px 15px;
   background-color: #e2eaf2;
   color: #000;
+  font-size: 13px;
+  text-transform: uppercase;
   -webkit-border-radius: 4px;
      -moz-border-radius: 4px;
           border-radius: 4px;
+}
+.quicktabs-tabs li.active {
+  border-bottom:1px solid #408fc4;
+  box-shadow: none;
 }
 .quicktabs-tabs li.active a {
   background-color: #63B2F5;
   color: #fff;
 }
 .quicktabs-tabs li a:hover,
-.quicktabs-tabs li a:focus { text-decoration: none; }
+.quicktabs-tabs li a:focus { 
+  text-decoration: none;
+  opacity: 0.8;
+}
 #edit-timezone { display: none;}
 /* End */
 
@@ -724,8 +746,8 @@ input[type="file"] + .input-group-btn button {
 }
 .ctools-auto-submit-full-form .form-radios .form-type-radio.active {}
 .ctools-auto-submit-full-form .form-radios .form-type-radio .input-rc {
-  /*width: 0;
-  opacity: 0;*/
+  width: 0;
+  opacity: 0;
 }
 /* -------------------------------------- */
 
@@ -900,7 +922,7 @@ input[type="file"] { padding: 0; }
 }
 #user-login-block-form-fields .captcha {
   display: inline-block;
-  width: 100%;  
+  width: 100%;
 }
 #user-login-block-form-fields .captcha img { margin-bottom: 15px; }
 .register-now {
@@ -916,7 +938,8 @@ input[type="file"] { padding: 0; }
 .register-now a {
   display: inline-block;
   width: 100%;
-  padding: 6px 12px;
+  height: 40px;
+  padding: 8px 12px;
   background-color: #066CFF;
   color: #fff;
   font-family: OpenSans-Semibold;
@@ -1040,13 +1063,26 @@ input[type="file"] { padding: 0; }
 }
 /* view Commodities */
 .view-countrywise-commodities .view-content,
-.view-countrywise-commodities .view-footer {
+.view-countrywise-commodities .view-footer,
+.view-countrywise-commodities .text-center {
   display: inline-block;
   width: 100%;
   max-width: 640px;
-  padding: 20px;
+  padding: 10px 20px 0;
   background-color: #fff;
+  vertical-align: top;
 }
+/*.view-countrywise-commodities .view-footer {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  margin-left: 15px;
+}
+.view-countrywise-commodities .text-center {
+  position: relative;
+  margin: 45px 0 0;
+  text-align: left;
+}*/
 .view-countrywise-commodities .table caption {
   padding: 0 0 10px;
   color: #3c454c;
@@ -1115,8 +1151,12 @@ input[type="file"] { padding: 0; }
   display: inline-block;
   margin-right: 10px;
   font-family: OpenSans-Bold;
-  font-size: 32px;
+  font-size: 30px;
+  vertical-align: middle;
   text-transform: capitalize;
+}
+.commodity-container .userlink {
+  display: inline-block;
 }
 .page-dashboard .view-filters .form-type-radio:first-child {
   display: none;
@@ -1282,6 +1322,18 @@ input[type="file"] { padding: 0; }
 }
 .thanks-content p {
   font-size: 18px;
+}
+/* End */
+
+
+/**
+ * My wishlist page
+ */
+.my-wishlist .view-countrywise-commodities .table > thead > tr {
+  background-color: #F7E1E3;
+}
+.my-wishlist .view-countrywise-commodities .view-content table tr td {
+  font-family: OpenSans-Regular;
 }
 /* End */
 
