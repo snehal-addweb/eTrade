@@ -553,6 +553,8 @@ em {
   background-color: #e2eaf2;
   color: #274472;
   border: none;
+  text-transform: uppercase;
+  font-size: 13px;
 }
 .nav-tabs li a:hover,
 .nav-tabs li a.active,
@@ -1062,27 +1064,24 @@ input[type="file"] { padding: 0; }
   height: auto;
 }
 /* view Commodities */
+.view-countrywise-commodities {
+  display: inline-block;
+  width: 100%;
+  max-width: 640px;
+}
 .view-countrywise-commodities .view-content,
 .view-countrywise-commodities .view-footer,
 .view-countrywise-commodities .text-center {
   display: inline-block;
   width: 100%;
-  max-width: 640px;
-  padding: 10px 20px 0;
+  padding: 10px 20px;
   background-color: #fff;
   vertical-align: top;
 }
-/*.view-countrywise-commodities .view-footer {
-  position: absolute;
-  left: 0;
-  z-index: 1;
-  margin-left: 15px;
-}
 .view-countrywise-commodities .text-center {
-  position: relative;
-  margin: 45px 0 0;
+  padding-top: 0;
   text-align: left;
-}*/
+}
 .view-countrywise-commodities .table caption {
   padding: 0 0 10px;
   color: #3c454c;
@@ -1157,6 +1156,12 @@ input[type="file"] { padding: 0; }
 }
 .commodity-container .userlink {
   display: inline-block;
+  vertical-align: middle;
+}
+.commodity-container .userlink {
+  font-size: 13px;
+  line-height: normal;
+  vertical-align: middle;
 }
 .page-dashboard .view-filters .form-type-radio:first-child {
   display: none;
@@ -1170,6 +1175,10 @@ input[type="file"] { padding: 0; }
   padding: 20px;
   background-color: #fff;
   font-size: 16px;
+}
+.flag-waiting .flag-throbber,
+.node-commodity-form .tabbable {
+  display: none;
 }
 
 /* End */
@@ -1282,8 +1291,9 @@ input[type="file"] { padding: 0; }
   width: 100%;
   margin: 0 0 15px 0;
   color: #3e484a;
-  font-family: OpenSans-ExtraBold;
-  font-size: 24px;
+  font-family: OpenSans-Bold;
+  font-size: 30px;
+  text-transform: capitalize;
 }
 .user-profile-dashboard .views-field-picture {
   float: left;
@@ -1368,8 +1378,8 @@ input[type="file"] { padding: 0; }
 .main-title-container .trade-title-left { float: left; }
 .main-title-container .trade-title-left .trade-title {
   margin: 0 0 15px;
-  font-family: OpenSans-Bold;
-  font-size: 26px;
+  font-family: OpenSans-ExtraBold;
+  font-size: 27px;
   text-transform: capitalize;
 }
 .main-title-container .trade-title-right {
@@ -1388,6 +1398,9 @@ input[type="file"] { padding: 0; }
   -webkit-border-radius: 1000px;
      -moz-border-radius: 1000px;
           border-radius: 1000px;
+}
+.main-title-container .trade-title-right .trade-status {
+  font-family: OpenSans-Semibold;
 }
 .main-title-container .trade-title-right .trade-user {
   margin: 0 0 0 10px;
@@ -1410,6 +1423,7 @@ input[type="file"] { padding: 0; }
   border: 1px solid #172F51;
   border-radius: 2  px;
 }
+.main-trade-content .trade-content-left .trade-decline,
 .main-trade-content .trade-content-left .trade-accept {
   display: inline-block;
   padding: 5px 10px;
@@ -1418,17 +1432,12 @@ input[type="file"] { padding: 0; }
   background-color: #21AA04;
   color: #fff;
   text-transform: uppercase;
-  font-family: OpenSans-Semibold;
+  font-family: OpenSans-Bold;
+  /*font-size: 20px;*/
 }
 .main-trade-content .trade-content-left .trade-decline {
-  display: inline-block;
-  padding: 5px 10px;
-  border: 1px solid #fff;
   background-color: #AA0317;
-  color: #fff;
-  text-transform: uppercase;
-  font-family: OpenSans-Semibold;
-
+  margin: 0;
 }
 .main-trade-content .trade-content-right {
   float: left;
@@ -1445,10 +1454,12 @@ input[type="file"] { padding: 0; }
   width: 100%;
   margin: 0;
   font-weight: normal;
+  font-family: OpenSans-Semibold;
+  font-size: 15px;
 }
 .main-trade-content .trade-content-right span {
   font-family: OpenSans-semiBold;
-  font-size: 26px;
+  font-size: 25px;
 }
 .main-trade-content .trade-content-right .trade-intention label {
   max-width: 150px;
@@ -1494,11 +1505,23 @@ input[type="file"] { padding: 0; }
      -moz-border-radius: 5px;
           border-radius: 5px;
 }
+.main-trade-content .trade-content-right .see-more a:after {
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  background-image: url('../images/see-more.png');
+  background-position: center right;
+  background-repeat: no-repeat;
+  content: "";
+}
 .main-trade-content .trade-content-right .see-more a:hover,
 .main-trade-content .trade-content-right .see-more a:focus,
 .main-trade-content .trade-content-right .flag-wrapper a:hover,
 .main-trade-content .trade-content-right .flag-wrapper a:focus {
   text-decoration: none;
+}
+.page-trade-details .text-center {
+  text-align: left;
 }
 /* End */
 
