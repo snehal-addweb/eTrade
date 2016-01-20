@@ -746,8 +746,8 @@ input[type="file"] + .input-group-btn button {
 }
 .ctools-auto-submit-full-form .form-radios .form-type-radio.active {}
 .ctools-auto-submit-full-form .form-radios .form-type-radio .input-rc {
-  /*width: 0;
-  opacity: 0;*/
+  width: 0;
+  opacity: 0;
 }
 /* -------------------------------------- */
 
@@ -1151,8 +1151,12 @@ input[type="file"] { padding: 0; }
   display: inline-block;
   margin-right: 10px;
   font-family: OpenSans-Bold;
-  font-size: 32px;
+  font-size: 30px;
+  vertical-align: middle;
   text-transform: capitalize;
+}
+.commodity-container .userlink {
+  display: inline-block;
 }
 .page-dashboard .view-filters .form-type-radio:first-child {
   display: none;
@@ -1318,6 +1322,18 @@ input[type="file"] { padding: 0; }
 }
 .thanks-content p {
   font-size: 18px;
+}
+/* End */
+
+
+/**
+ * My wishlist page
+ */
+.my-wishlist .view-countrywise-commodities .table > thead > tr {
+  background-color: #F7E1E3;
+}
+.my-wishlist .view-countrywise-commodities .view-content table tr td {
+  font-family: OpenSans-Regular;
 }
 /* End */
 
