@@ -119,6 +119,7 @@
     </div>
   <?php endif; ?>
 </header>
+<div class="default-message container"><?php print $messages; ?></div>
 <div class="main-white-header">
   <div class="container">
    <?php if (!empty($page['front_slider'])): ?>
@@ -145,6 +146,7 @@
     <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
   </div>
 </div>
+
 <div class="main-grey-container">
   <div class="main-container container">
 
@@ -170,7 +172,6 @@
           <?php endif; ?>
           
           <a id="main-content"></a>
-          <?php print $messages; ?>
           <?php if (!empty($tabs)): ?>
             <?php print render($tabs); ?>
           <?php endif; ?>
