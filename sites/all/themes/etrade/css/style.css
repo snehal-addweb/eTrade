@@ -66,6 +66,7 @@ a:focus { outline: none; }
   border: none;
   background-color: #284473;
   color: #fff;
+  vertical-align: top;
   -webkit-border-radius: 0;
      -moz-border-radius: 0;
           border-radius: 0;
@@ -483,7 +484,7 @@ a:focus { outline: none; }
 .main-white-header {
   display: inline-block;
   width: 100%;
-  padding: 20px 0;
+  padding: 0
   background-color: #fff;
 }
 .main-grey-container {
@@ -727,7 +728,7 @@ input[type="file"] + .input-group-btn button {
 .ctools-auto-submit-full-form .bef-select-as-radios {
   border-bottom: 5px solid #fff;
 }
-.ctools-auto-submit-full-form .form-radios .form-type-radio label {
+/*.ctools-auto-submit-full-form .form-radios .form-type-radio label {
   display: inline-block;
   padding: 10px 30px;
   border-top: 1px solid #fff;
@@ -736,8 +737,8 @@ input[type="file"] + .input-group-btn button {
   -webkit-box-shadow: 1px 0 0 0 rgba(0, 0, 0, 0.2);
      -moz-box-shadow: 1px 0 0 0 rgba(0, 0, 0, 0.2);
           box-shadow: 1px 0 0 0 rgba(0, 0, 0, 0.2);
-}
-.ctools-auto-submit-full-form .form-radios .form-type-radio label.radio-active {
+}*/
+/*.ctools-auto-submit-full-form .form-radios .form-type-radio label.radio-active {
   border-top: none;
   border-bottom: 1px solid #408fc4;
   background-color: #63B2F5;
@@ -745,6 +746,22 @@ input[type="file"] + .input-group-btn button {
   -webkit-box-shadow: none;
      -moz-box-shadow: none;
           box-shadow: none;
+}*/
+.ctools-auto-submit-full-form .form-radios .form-type-radio label {
+  display: inline-block;
+  padding: 10px 30px;
+  border-top: 1px solid #fff;
+  color: #fff;
+  border-bottom: 1px solid #ddd;
+  -webkit-box-shadow: 1px 0 0 0 rgba(0, 0, 0, 0.2);
+     -moz-box-shadow: 1px 0 0 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 0 0 0 rgba(0, 0, 0, 0.2);
+}
+.ctools-auto-submit-full-form .form-radios .form-type-radio:nth-child(2) label {
+  background-color: #284473;
+}
+.ctools-auto-submit-full-form .form-radios .form-type-radio:nth-child(3) label {
+  background-color: #C00D3D;
 }
 .ctools-auto-submit-full-form .form-radios .form-type-radio.active {}
 .ctools-auto-submit-full-form .form-radios .form-type-radio .input-rc {
@@ -1524,6 +1541,109 @@ input[type="file"] { padding: 0; }
   text-align: left;
 }
 /* End */
+
+
+/**
+ * Header commodities
+ */
+.head-comm {
+  display: inline-block;
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  margin: 0 0 30px 0;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0 0 5px 1px rgba(223, 220, 214, 0.8);
+  font-family: Arial;
+  vertical-align: top;
+}
+.header-commodities {
+  display: inline-block;
+  width: 100%;
+  max-width: 100%;
+}
+.header-commodities .view-header,
+.header-commodities .view-content {
+  display: inline-block;
+  width: auto;
+  padding: 0;
+}
+.header-commodities .view-header {
+  padding-right: 20px;
+}
+.head-comm #block-views-countrywise-commodities-block-3 {
+  display: inline-block;
+  width: -webkit-calc(100% - 170px);
+  width:    -moz-calc(100% - 170px);
+  width:         calc(100% - 170px);
+  padding: 5px 0 0;
+  vertical-align: top;
+}
+.head-comm #block-views-80f5b3625a0821708f08af0155e6cf76 {
+  display: inline-block;
+  width: 160px;
+  max-width: 160px;
+  background-color: #022B69;
+  text-align: center;
+  color: #fff;
+  vertical-align: top;
+}
+.head-comm #block-views-80f5b3625a0821708f08af0155e6cf76 .form-type-select:before {
+  background: transparent;
+}
+.head-comm #block-views-80f5b3625a0821708f08af0155e6cf76 * {
+  padding: 0;
+  margin: 0;
+}
+.head-comm #block-views-80f5b3625a0821708f08af0155e6cf76 .views-exposed-form .views-exposed-widget {
+  width: 100%;
+  padding: 0;
+}
+.head-comm #block-views-80f5b3625a0821708f08af0155e6cf76 .chosen-container,
+.head-comm #block-views-80f5b3625a0821708f08af0155e6cf76 .chosen-container a {
+  width: 100% !important;
+  border: none;
+  background: transparent;
+  box-shadow: none;
+  color: #fff;
+}
+.header-commodities .view-header .com-title {
+  color: 668b97;
+  font-family: arial;
+  font-weight: bold;
+  font-size: 14px;
+}
+.header-commodities .view-header .com-date {
+  color: #666666;
+  font-size: 11px;
+}
+.header-commodities .view-header .comm-date {
+  color: #666666;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.header-commodities .view-content .views-row {
+  display: inline-block;
+  padding: 0 40px;
+  background-image: url('../images/head-comm-divider.png');
+  background-size: 3px 51px;
+  background-position: center left;
+  background-repeat: no-repeat;
+}
+.header-commodities .view-content .views-row .views-field-title a {
+  color: #002f74;
+  font-size: 12px;
+}
+.header-commodities .view-content .views-row .views-field-field-total-quantity {
+  color: #666;
+  font-size: 11px;
+}
+.header-commodities .view-content .views-row .views-field-field-price-per-metric-ton {
+  color: #B60C3A;
+  font-weight: bold;
+}
+/* End */
+
 
 /**
  * Responsive design
