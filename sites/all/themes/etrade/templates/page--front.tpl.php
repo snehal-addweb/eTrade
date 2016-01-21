@@ -121,6 +121,13 @@
 </header>
 <div class="default-message container"><?php print $messages; ?></div>
 <div class="main-white-header">
+  <div class="head-comm">
+      <div class="container">
+         <?php if (!empty($page['header_commodities'])): ?>
+              <?php print render($page['header_commodities']); ?>
+         <?php endif; ?>
+      </div>
+  </div>
   <div class="container">
    <?php if (!empty($page['front_slider'])): ?>
         <?php print render($page['front_slider']); ?>
