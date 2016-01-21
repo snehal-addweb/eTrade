@@ -24,6 +24,21 @@ jQuery(document).ready(function() {
   });
   /* End */
 
+ /* jQuery('.ctools-auto-submit-full-form .form-radios .form-type-radio label').click(function() {
+    jQuery('.ctools-auto-submit-full-form .form-radios .form-type-radio label').removeClass('radio-active');
+    jQuery(this).addClass('radio-active');
+  });*/
+
+  jQuery('#edit-field-commodity-type-value-0').parents('.form-type-radio label').addClass('radio-active');
+  jQuery('#edit-field-commodity-type-value-0').click(function() {
+    jQuery('#edit-field-commodity-type-value-1').parents('.form-type-radio label').removeClass('radio-active');
+    jQuery('#edit-field-commodity-type-value-0').parents('.form-type-radio label').addClass('radio-active');
+  });
+  jQuery('#edit-field-commodity-type-value-1').click(function() {
+    jQuery('#edit-field-commodity-type-value-0').parents('.form-type-radio label').removeClass('radio-active');
+    jQuery('#edit-field-commodity-type-value-1').parents('.form-type-radio label').addClass('radio-active');
+  });
+
   jQuery(document).ajaxComplete(function() {
     jQuery('.input-file').removeClass('input-file');
     jQuery('input[type="file"]').unwrap('<div class="input-file"><div class="input-file-sub"></div></div>');
@@ -40,20 +55,21 @@ jQuery(document).ready(function() {
   /* End */
 
     /* */
-     jQuery('.ctools-auto-submit-full-form .form-radios .form-type-radio label').click(function() {
-      jQuery('.ctools-auto-submit-full-form .form-radios .form-type-radio label').removeClass('radio-active');
-      jQuery(this).addClass('radio-active');
+
+    jQuery('#edit-field-commodity-type-value-0').on('click',function() {
+      jQuery('#edit-field-commodity-type-value-1').parents('.form-type-radio label').removeClass('radio-active');
+      jQuery('#edit-field-commodity-type-value-0').parents('.form-type-radio label').addClass('radio-active');
+    });
+    jQuery('#edit-field-commodity-type-value-1').on('click',function() {
+      jQuery('#edit-field-commodity-type-value-0').parents('.form-type-radio label').removeClass('radio-active');
+      jQuery('#edit-field-commodity-type-value-1').parents('.form-type-radio label').addClass('radio-active');
     });
   });
   /* End */
 
-  jQuery('.ctools-auto-submit-full-form .form-radios .form-type-radio label').click(function() {
-    jQuery('.ctools-auto-submit-full-form .form-radios .form-type-radio label').removeClass('radio-active');
-    jQuery(this).addClass('radio-active');
-  });
 
   jQuery('#views-exposed-form-countrywise-commodities-page div.location_auto_country a').click(function() {
-	  jQuery('.view-countrywise-commodities #views-exposed-form-countrywise-commodities-page select#edit-country option').each(function(){
+	  jQuery('#views-exposed-form-countrywise-commodities-page select#edit-country option').each(function(){
 
 	      var val = jQuery(this).val();
 	    	var html_txt = jQuery(this).text();
