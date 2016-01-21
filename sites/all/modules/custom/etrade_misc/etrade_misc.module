@@ -47,7 +47,22 @@ function etrade_misc_form_alter(&$form, &$form_state, $form_id) {
  		$form['account']['mail']['#title'] = 'Email';
  	}
  	if($form_id == 'webform_client_form_5') {
- 		$form['actions']['submit']['#value'] = 'Submit Quote';
+ 		$form['actions']['submit']['#value'] = 'Submit';
  	}
+ 	if($form_id == 'webform_client_form_61'){
+ 		if(isset($_REQUEST['nid']) && !empty($_REQUEST['nid'])) {
+ 			$node_info = node_load($_REQUEST['nid']);
+ 			$form['submitted']['commodity']['#webform_component']['value'] = $node_info->title;
+ 			$form['submitted']['commodity']['#default_value'] = $node_info->title;
+ 			if(isset($node_info->field_total_quantity[LANGUAGE_NONE]) && !empty($node_info->field_total_quantity[LANGUAGE_NONE])) {
+ 				$form['submitted']['qty']['#webform_component']['value'] = $node_info->field_total_quantity[LANGUAGE_NONE][0]['value'];
+ 				$form['submitted']['qty']['#default_value'] = $node_info->field_total_quantity[LANGUAGE_NONE][0]['value'];
+ 			}
 
+ 			if(isset($node_info->field_load_port[LANGUAGE_NONE]) && !empty($node_info->field_total_quantity[LANGUAGE_NONE])) {
+ 				$form['submitted']['load_port']['#webform_component']['value'] = $node_info->field_load_port[LANGUAGE_NONE][0]['value'];
+ 				$form['submitted']['load_port']['#default_value'] = $node_info->field_load_port[LANGUAGE_NONE][0]['value'];
+ 			}
+ 		}
+ 	}
 }
