@@ -56,39 +56,37 @@ jQuery(document).ready(function() {
 
     /* */
 
-    jQuery('#edit-field-commodity-type-value-0').on('click',function() {
-      jQuery('#edit-field-commodity-type-value-1').parents('.form-type-radio label').removeClass('radio-active');
-      jQuery('#edit-field-commodity-type-value-0').parents('.form-type-radio label').addClass('radio-active');
-    });
-    jQuery('#edit-field-commodity-type-value-1').on('click',function() {
-      jQuery('#edit-field-commodity-type-value-0').parents('.form-type-radio label').removeClass('radio-active');
-      jQuery('#edit-field-commodity-type-value-1').parents('.form-type-radio label').addClass('radio-active');
-    });
+    if(jQuery('#edit-field-commodity-type-value-0').attr('checked','true')){
+      jQuery(this).parents('div.form-type-radio label').addClass('radio-active');
+    }
+    if(jQuery('#edit-field-commodity-type-value-1').attr('checked','true')){
+      jQuery(this).parents('div.form-type-radio').addClass('radio-active');
+    }
   });
   /* End */
 
 
   jQuery('#views-exposed-form-countrywise-commodities-page div.location_auto_country a').click(function() {
-	  jQuery('#views-exposed-form-countrywise-commodities-page select#edit-country option').each(function(){
+    jQuery('#views-exposed-form-countrywise-commodities-page select#edit-country option').each(function(){
 
-	      var val = jQuery(this).val();
-	    	var html_txt = jQuery(this).text();
-	      var html_txt = html_txt.replace(" ", "_");
-	      var html_txt = html_txt.toLowerCase();
-	      
-	      jQuery('#views-exposed-form-countrywise-commodities-page div.location_auto_country .chosen-drop ul li').each(function(){
-	        var li_html_val = jQuery(this).html();
-	        var li_html_txt = jQuery(this).text();
-	        var li_html_txt = li_html_txt.replace(" ", "_");
-	        var li_html_txt = li_html_txt.toLowerCase();
+        var val = jQuery(this).val();
+        var html_txt = jQuery(this).text();
+        var html_txt = html_txt.replace(" ", "_");
+        var html_txt = html_txt.toLowerCase();
+        
+        jQuery('#views-exposed-form-countrywise-commodities-page div.location_auto_country .chosen-drop ul li').each(function(){
+          var li_html_val = jQuery(this).html();
+          var li_html_txt = jQuery(this).text();
+          var li_html_txt = li_html_txt.replace(" ", "_");
+          var li_html_txt = li_html_txt.toLowerCase();
 
-	        if (li_html_txt == html_txt) {
-	          var str_img = '<img src="/sites/all/themes/etrade/images/flags/' + val + '.gif" />';
-	          var new_li_val = str_img + li_html_val;
-	          jQuery(this).html(new_li_val);
-	          jQuery(this).addClass(val);
-	        }
-	      });
-  	});
- 	});
+          if (li_html_txt == html_txt) {
+            var str_img = '<img src="/sites/all/themes/etrade/images/flags/' + val + '.gif" />';
+            var new_li_val = str_img + li_html_val;
+            jQuery(this).html(new_li_val);
+            jQuery(this).addClass(val);
+          }
+        });
+    });
+  });
 });
