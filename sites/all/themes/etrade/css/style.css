@@ -358,7 +358,7 @@ a:focus { outline: none; }
 .get-a-qoute .pane-title {
   padding: 20px 20px 10px;
   margin: 0;
-  background-color: #022B69;
+  background-color: #08086b;
   color: #fff;
   font-family: Arial;
   font-size: 26px;
@@ -366,7 +366,7 @@ a:focus { outline: none; }
 }
 .get-a-qoute .pane-content {
   padding: 20px;
-  background-color: #022B69;
+  background-color: #08086b;
 }
 .get-a-qoute label { display: none; }
 .get-a-qoute .pane-content input {
@@ -1200,10 +1200,13 @@ input[type="file"] { padding: 0; }
 .node-commodity-form .tabbable {
   display: none;
 }
+.node-commodity-form #edit-field-quality-assaying-und .form-item-field-quality-assaying-und:nth-child(1) {
+  display: none;
+} 
 
 /* End */
 
-/* Add commodity */
+/* Add commodities */
 .group-add-commodity-left,
 .group-add-commodity-center,
 .group-add-commodity-right {
@@ -1245,7 +1248,7 @@ input[type="file"] { padding: 0; }
 }
 .field-type-datetime .date-combo .panel-body .form-item .date-date input {
   width: 100%;
-  margin: 0;
+  margin: 0;  
 }
 .group-add-commodity-right ~ .form-actions { clear: none; }
 .group-add-commodity-right .form-checkboxes .control-label {
