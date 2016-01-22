@@ -9,7 +9,7 @@
 
 
 function etrade_misc_node_presave($node){
-	global $user;
+	/*global $user;
 	if($node->type == 'user_profile'){
 		$user = user_load($user->uid);
 		if(in_array('administrator', $user->roles) || in_array('Manager', $user->roles)) {
@@ -27,7 +27,7 @@ function etrade_misc_node_presave($node){
 				}
 			}
 		}
-	}
+	}*/
 }
 
 function etrade_misc_form_alter(&$form, &$form_state, $form_id) {	
