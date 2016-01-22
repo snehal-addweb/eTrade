@@ -1200,9 +1200,6 @@ input[type="file"] { padding: 0; }
 .node-commodity-form .tabbable {
   display: none;
 }
-.node-commodity-form #edit-field-quality-assaying-und .form-item-field-quality-assaying-und:nth-child(1) {
-  display: none;
-} 
 
 /* End */
 
@@ -1256,6 +1253,31 @@ input[type="file"] { padding: 0; }
   font-size: 13px;
 }
 .field-type-location .checkbox { display: none; }
+.node-commodity-form #edit-field-quality-assaying-und .form-item-field-quality-assaying-und:nth-child(1) {
+  display: none;
+}
+.node-commodity-form .group-list-of-documents {
+  display: inline-block;
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  -webkit-box-shadow: 0 0 5px 1px rgba(223, 220, 214, 0.75) inset;
+     -moz-box-shadow: 0 0 5px 1px rgba(223, 220, 214, 0.75) inset;
+          box-shadow: 0 0 5px 1px rgba(223, 220, 214, 0.75) inset;
+}
+.node-commodity-form .group-list-of-documents h3 {
+  margin-top: 0;
+  font-family: opensans-semibold;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.node-commodity-form .group-list-of-documents #field-any-other-document-add-more-wrapper .table-responsive {
+  overflow: hidden;
+}
 
 
 /**
