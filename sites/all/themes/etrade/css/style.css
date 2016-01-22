@@ -64,7 +64,8 @@ a:focus { outline: none; }
   margin: 0;
   padding: 0;
   border: none;
-  background-color: #284473;
+  /*background-color: #284473;*/
+  background-color: #08086b;
   color: #fff;
   vertical-align: top;
   -webkit-border-radius: 0;
@@ -91,11 +92,12 @@ a:focus { outline: none; }
   padding: 0;
   border-top: 1px solid #7c092a;
   border-bottom: 1px solid #7b0a28;
-  background: #c10d3d;
+  /*background: #c10d3d;
   background: -moz-linear-gradient(top, #c10d3d 0%, #a00934 100%);
   background: -webkit-linear-gradient(top, #c10d3d 0%,#a00934 100%);
   background: linear-gradient(to bottom, #c10d3d 0%,#a00934 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c10d3d', endColorstr='#a00934',GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c10d3d', endColorstr='#a00934',GradientType=0 );*/
+  background-color: #e71029;
   color: #fff;
 }
 #navbar .navbar-collapse > nav {
@@ -155,7 +157,8 @@ a:focus { outline: none; }
 #block-system-main-menu .menu li a.active, 
 #block-system-main-menu .menu li a:hover,
 #block-system-main-menu .menu li a:focus {
-  background-color: #8A0A2D;
+  /*background-color: #8A0A2D;*/
+  background-color: #c2020e;
 }
 /* End */
 
@@ -353,17 +356,17 @@ a:focus { outline: none; }
   border: 1px solid #b0b0b0;
 }
 .get-a-qoute .pane-title {
-  padding: 20px;
+  padding: 20px 20px 10px;
   margin: 0;
-  background-color: #022B69;
+  background-color: #08086b;
   color: #fff;
   font-family: Arial;
-  font-size: 32px;
+  font-size: 26px;
   text-align: center;
 }
 .get-a-qoute .pane-content {
   padding: 20px;
-  background-color: #022B69;
+  background-color: #08086b;
 }
 .get-a-qoute label { display: none; }
 .get-a-qoute .pane-content input {
@@ -418,7 +421,7 @@ a:focus { outline: none; }
   display: inline-block;
   width: 100%;
   margin-top: 0;
-  background-color: #284473;
+  background-color: #08086b;
   color: #e3eaf0;
 }
 .footer a:before {
@@ -536,7 +539,7 @@ em {
   text-transform: uppercase;
 }
 .red-text {
-  color: #ff0045;
+  color: #E71029;
   padding-right: 10px;
 }
 /* End */
@@ -642,7 +645,7 @@ input[type="file"] + .input-group-btn button {
   padding: 6px 12px;
   margin: 3px 0;
   border: none;
-  background-color: #032B69;
+  background-color: #08086b;
   color: #fff;
   font-family: OpenSans-Semibold;
   font-size: 15px;
@@ -670,7 +673,7 @@ input[type="file"] + .input-group-btn button {
 .btn-default:focus,
 .btn-default:active,
 .btn-danger:active {
-  background-color: #032B69;
+  background-color: #08086b;
   color: #fff;
   outline: none;
   opacity: 0.8;
@@ -680,7 +683,7 @@ input[type="file"] + .input-group-btn button {
 .btn-danger:focus,
 .btn-danger:hover,
 .btn-danger:active {
-  background-color: #032B69 !important;
+  background-color: #08086b !important;
 }
 
 .form-type-password-confirm > label,
@@ -758,10 +761,10 @@ input[type="file"] + .input-group-btn button {
           box-shadow: 1px 0 0 0 rgba(0, 0, 0, 0.2);
 }
 .ctools-auto-submit-full-form .form-radios .form-type-radio:nth-child(2) label {
-  background-color: #284473;
+  background-color: #08086b;
 }
 .ctools-auto-submit-full-form .form-radios .form-type-radio:nth-child(3) label {
-  background-color: #C00D3D;
+  background-color: #e71029;
 }
 .ctools-auto-submit-full-form .form-radios .form-type-radio.active {}
 .ctools-auto-submit-full-form .form-radios .form-type-radio .input-rc {
@@ -1128,7 +1131,7 @@ input[type="file"] { padding: 0; }
   font-family: OpenSans-Regular;
 }
 .view-countrywise-commodities .view-content table .views-field-delete-node a {
-  color: #CB2A2F;
+  color: #e71029;
 }
 .view-footer .add-commodity {
   display: inline-block;
@@ -1143,7 +1146,7 @@ input[type="file"] { padding: 0; }
   padding: 8px 12px;
   margin: 3px 0;
   border: none;
-  background-color: #032B69;
+  background-color: #08086b;
   color: #fff;
   font-family: OpenSans-Semibold;
   font-size: 15px;
@@ -1197,10 +1200,13 @@ input[type="file"] { padding: 0; }
 .node-commodity-form .tabbable {
   display: none;
 }
+.node-commodity-form #edit-field-quality-assaying-und .form-item-field-quality-assaying-und:nth-child(1) {
+  display: none;
+} 
 
 /* End */
 
-/* Add commodity */
+/* Add commodities */
 .group-add-commodity-left,
 .group-add-commodity-center,
 .group-add-commodity-right {
@@ -1242,7 +1248,7 @@ input[type="file"] { padding: 0; }
 }
 .field-type-datetime .date-combo .panel-body .form-item .date-date input {
   width: 100%;
-  margin: 0;
+  margin: 0;  
 }
 .group-add-commodity-right ~ .form-actions { clear: none; }
 .group-add-commodity-right .form-checkboxes .control-label {
@@ -1583,7 +1589,7 @@ input[type="file"] { padding: 0; }
   display: inline-block;
   width: 160px;
   max-width: 160px;
-  background-color: #022B69;
+  background-color: #08086b;
   text-align: center;
   color: #fff;
   vertical-align: top;
@@ -1622,9 +1628,16 @@ input[type="file"] { padding: 0; }
   text-transform: uppercase;
   font-size: 12px;
 }
-.header-commodities .view-content .views-row {
+.header-commodities .view-content .views-slideshow-cycle-main-frame-row {
+  position: relative !important;
   display: inline-block;
-  padding: 0 40px;
+  width: 100% !important;
+  height: auto !important;
+}
+.header-commodities .view-content .views-row {
+  float: left;
+  display: inline-block;
+  padding: 0 35px;
   background-image: url('../images/head-comm-divider.png');
   background-size: 3px 51px;
   background-position: center left;
@@ -1639,7 +1652,7 @@ input[type="file"] { padding: 0; }
   font-size: 11px;
 }
 .header-commodities .view-content .views-row .views-field-field-price-per-metric-ton {
-  color: #B60C3A;
+  color: #e71029;
   font-weight: bold;
 }
 /* End */
