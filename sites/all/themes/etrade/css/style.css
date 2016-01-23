@@ -1278,6 +1278,34 @@ input[type="file"] { padding: 0; }
 .node-commodity-form .group-list-of-documents #field-any-other-document-add-more-wrapper .table-responsive {
   overflow: hidden;
 }
+.node-commodity-form .tabledrag-toggle-weight,
+.node-commodity-form .field-multiple-drag {
+  display: none;
+}
+.node-commodity-form .field-multiple-table,
+.node-commodity-form table tr.draggable td {
+  padding: 0;
+  border: none;
+}
+.node-commodity-form table tr.draggable {
+  display: inline-block;
+  margin: 0 0 10px;
+}
+.node-commodity-form .field-multiple-table thead .field-label {
+  border: none;
+  padding: 0;
+}
+.node-commodity-form table tr.draggable label {
+  float: left;
+  margin: 0;
+}
+.node-commodity-form .field-type-text .field-add-more-submit {
+  float: right;
+  width: auto;
+}
+.node-commodity-form #edit-field-price-per-metric-ton label {
+  width: auto;
+}
 
 
 /**
