@@ -109,13 +109,22 @@ a:focus { outline: none; }
 }
 
 /* Navigation menu */
-#block-system-main-menu {
+.tb-megamenu {
   float: left;
   display: inline-block;
   width: 100%;
   text-align: center;
 }
-#block-system-main-menu .menu {
+.tb-megamenu .nav-collapse,
+.tb-megamenu .dropdown-menu {
+  background-color: #e71029;
+  color: #fff;
+}
+.tb-megamenu .dropdown-menu {
+  width: 100%;
+  border: none;
+}
+.tb-megamenu .tb-megamenu-nav {
   float: none;
   display: inline-block;
   width: auto;
@@ -123,13 +132,14 @@ a:focus { outline: none; }
   line-height: normal;
   vertical-align: middle;
 }
-#block-system-main-menu .menu li {
+.tb-megamenu .tb-megamenu-nav li {
   float: left;
   display: inline-block;
 }
-#block-system-main-menu .menu li a {
+.tb-megamenu .tb-megamenu-nav li a {
   display: inline-block;
   padding: 15px 30px;
+  border: 0;
   background: url("../images/main-menu-divider.png");
   background-repeat:  no-repeat;
   background-position:  right center;
@@ -140,7 +150,7 @@ a:focus { outline: none; }
   vertical-align: middle;
   text-transform: uppercase;
 }
-#block-system-main-menu .menu li.first a:before {
+.tb-megamenu .tb-megamenu-nav li:nth-child(1) a:before {
   display: inline-block;
   height: 24px;
   width: 31px;
@@ -151,14 +161,23 @@ a:focus { outline: none; }
   background-size:  auto 100%;
   content: "";
 }
-#block-system-main-menu .menu li.last a {
+.tb-megamenu .tb-megamenu-nav li:last-child a {
   background: transparent;
 }
-#block-system-main-menu .menu li a.active, 
-#block-system-main-menu .menu li a:hover,
-#block-system-main-menu .menu li a:focus {
-  /*background-color: #8A0A2D;*/
+.tb-megamenu .nav > li > a:focus,
+.tb-megamenu .nav > li > a:hover,
+.tb-megamenu .nav li.dropdown.open > .dropdown-toggle {
   background-color: #c2020e;
+  color: #fff;
+}
+.tb-megamenu .nav > .active > a,
+.tb-megamenu .nav > .active > a:hover,
+.tb-megamenu .nav > .active > a:focus {
+  background-color: #c2020e;
+}
+.tb-megamenu .nav li.dropdown > .dropdown-toggle .caret {
+  border-top-color: #fff;
+  border-bottom-color: #fff;
 }
 /* End */
 
