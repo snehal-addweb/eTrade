@@ -29,7 +29,7 @@ jQuery(document).ready(function() {
     jQuery(this).addClass('radio-active');
   });*/
 
-  jQuery('#edit-field-commodity-type-value-0').parents('.form-type-radio label').addClass('radio-active');
+  /*jQuery('#edit-field-commodity-type-value-0').parents('.form-type-radio label').addClass('radio-active');
   jQuery('#edit-field-commodity-type-value-0').click(function() {
     jQuery('#edit-field-commodity-type-value-1').parents('.form-type-radio label').removeClass('radio-active');
     jQuery('#edit-field-commodity-type-value-0').parents('.form-type-radio label').addClass('radio-active');
@@ -37,7 +37,7 @@ jQuery(document).ready(function() {
   jQuery('#edit-field-commodity-type-value-1').click(function() {
     jQuery('#edit-field-commodity-type-value-0').parents('.form-type-radio label').removeClass('radio-active');
     jQuery('#edit-field-commodity-type-value-1').parents('.form-type-radio label').addClass('radio-active');
-  });
+  });*/
 
   jQuery(document).ajaxComplete(function() {
     jQuery('.input-file').removeClass('input-file');
@@ -56,12 +56,12 @@ jQuery(document).ready(function() {
 
     /* */
 
-    if(jQuery('#edit-field-commodity-type-value-0').attr('checked','true')){
+   /* if(jQuery('#edit-field-commodity-type-value-0').attr('checked','true')){
       jQuery(this).parents('div.form-type-radio label').addClass('radio-active');
     }
     if(jQuery('#edit-field-commodity-type-value-1').attr('checked','true')){
       jQuery(this).parents('div.form-type-radio').addClass('radio-active');
-    }
+    }*/
   });
   /* End */
 
