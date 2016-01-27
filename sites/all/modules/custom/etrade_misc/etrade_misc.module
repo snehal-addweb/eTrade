@@ -66,3 +66,11 @@ function etrade_misc_form_alter(&$form, &$form_state, $form_id) {
  		}
  	}
 }
+
+function etrade_misc_form_views_exposed_form_alter(&$form, $form_state, $form_id) {
+  if($form['#form_id'] == 'views_exposed_form' && $form['#id'] == 'views-exposed-form-countrywise-commodities-block-1'){
+    $form['field_commodity_type_value']['#options'][0] = 'Buy Trade';
+    $form['field_commodity_type_value']['#options'][1] = 'Sell Trade';
+  }
+  
+}
