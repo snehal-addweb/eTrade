@@ -978,7 +978,8 @@ input[type="file"] { padding: 0; }
   padding-bottom: 0;
   margin: 0;
 }
-#user-login-block-form-fields .captcha {
+#user-login-block-form-fields .captcha,
+.captcha {
   display: inline-block;
   width: 100%;
 }
@@ -1700,10 +1701,10 @@ input[type="file"] { padding: 0; }
   width: auto;
   padding: 0;
 }
-.header-commodities .view-header {
+/*.header-commodities .view-header {
   padding-right: 20px;
-}
-.head-comm #block-views-countrywise-commodities-block-3 {
+}*/
+.head-comm #block-views-home-page-ticker-block-1 {
   display: inline-block;
   width: -webkit-calc(100% - 170px);
   width:    -moz-calc(100% - 170px);
@@ -1737,9 +1738,9 @@ input[type="file"] { padding: 0; }
   border: none;
   background: transparent;
   box-shadow: none;
-  color: #fff;
+  color: #fff;  
 }
-.header-commodities .view-header .com-title {
+/*.header-commodities .view-header .com-title {
   color: 668b97;
   font-family: arial;
   font-weight: bold;
@@ -1753,7 +1754,7 @@ input[type="file"] { padding: 0; }
   color: #666666;
   text-transform: uppercase;
   font-size: 12px;
-}
+}*/
 .header-commodities .view-content .views-slideshow-cycle-main-frame-row {
   position: relative !important;
   display: inline-block;
@@ -1763,10 +1764,10 @@ input[type="file"] { padding: 0; }
 .header-commodities .view-content .views-row {
   float: left;
   display: inline-block;
-  padding: 0 35px;
+  padding: 0 45px;
   background-image: url('../images/head-comm-divider.png');
   background-size: 3px 51px;
-  background-position: center left;
+  background-position: center right;
   background-repeat: no-repeat;
 }
 .header-commodities .view-content .views-row .views-field-title a {
