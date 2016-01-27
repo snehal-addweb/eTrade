@@ -983,6 +983,9 @@ input[type="file"] { padding: 0; }
   display: inline-block;
   width: 100%;
 }
+#block-user-login .g-recaptcha iframe {
+  width: 250px !important;
+}
 #user-login-block-form-fields .captcha img { margin-bottom: 15px; }
 .register-now {
   display: inline-block;
