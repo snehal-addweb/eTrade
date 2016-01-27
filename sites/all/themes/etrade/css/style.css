@@ -138,17 +138,20 @@ a:focus { outline: none; }
 }
 .tb-megamenu .tb-megamenu-nav li a {
   display: inline-block;
+  width: 100%;
   padding: 15px 30px;
-  border: 0;
-  background: url("../images/main-menu-divider.png");
-  background-repeat:  no-repeat;
-  background-position:  right center;
-  background-size:  auto 100%;
+  border: 0;  
   color: #fff;
   font-size: 18px;
   line-height: normal;
   vertical-align: middle;
   text-transform: uppercase;
+}
+.tb-megamenu .tb-megamenu-nav li > a {
+  background: url("../images/main-menu-divider.png");
+  background-repeat:  no-repeat;
+  background-position: right center;
+  background-size:  auto 100%;
 }
 .tb-megamenu .tb-megamenu-nav li:nth-child(1) a:before {
   display: inline-block;
@@ -164,20 +167,28 @@ a:focus { outline: none; }
 .tb-megamenu .tb-megamenu-nav li:last-child a {
   background: transparent;
 }
-.tb-megamenu .nav > li > a:focus,
-.tb-megamenu .nav > li > a:hover,
+.tb-megamenu .nav li a:focus,
+.tb-megamenu .nav li a:hover,
 .tb-megamenu .nav li.dropdown.open > .dropdown-toggle {
   background-color: #c2020e;
   color: #fff;
+  text-decoration: none;
 }
 .tb-megamenu .nav > .active > a,
 .tb-megamenu .nav > .active > a:hover,
 .tb-megamenu .nav > .active > a:focus {
-  background-color: #c2020e;
+  background-color: #c2020e !important;
 }
 .tb-megamenu .nav li.dropdown > .dropdown-toggle .caret {
+  margin-top: 11px;
   border-top-color: #fff;
   border-bottom-color: #fff;
+}
+.tb-megamenu .tb-megamenu-nav .tb-megamenu-item .mega-inner {
+  padding: 0;
+}
+.tb-megamenu .tb-megamenu-nav .tb-megamenu-item .mega-inner .tb-block {
+  margin: 0;
 }
 /* End */
 
@@ -467,6 +478,12 @@ a:focus { outline: none; }
 .footer li a:hover,
 .footer li a:focus {
   background-color: transparent;
+}
+.footer .nav .open > a,
+.footer .nav .open > a:focus,
+.footer .nav .open > a:hover {
+  background-color: transparent;
+  opacity: 0.8;
 }
 .footer .region-footer {
   display: inline-block;
@@ -1219,7 +1236,47 @@ input[type="file"] { padding: 0; }
 .node-commodity-form .tabbable {
   display: none;
 }
+.view-trade-details td.views-field-field-guarantee-stamp {
+  font-size: 0;
+}
+.view-trade-details td.views-field-field-guarantee-stamp .verified:after {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  margin: 0 0 0 10px;
+  background-image: url('../images/verified.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  content: "";
+  vertical-align: middle;
+}
+.view-trade-details td.views-field-field-guarantee-stamp .verified,
+.view-trade-details td.views-field-field-guarantee-stamp .not-verified {
+  font-size: 14px;
+  vertical-align: middle;
+  white-space: nowrap;
+}
 
+#edit-country-wrapper .form-type-select:before {
+  top: 15px;
+}
+#edit_country_chosen {
+  padding: 0;
+  border: none;
+  background:transparent;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 0;
+  box-shadow: none;
+}
+#edit_country_chosen a {
+  min-height: 40px;
+  padding: 6px 12px;  
+}
+#edit_country_chosen a b {
+  background: none;
+}
 /* End */
 
 /* Add commodities */

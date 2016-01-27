@@ -24,21 +24,17 @@ jQuery(document).ready(function() {
   });
   /* End */
 
- /* jQuery('.ctools-auto-submit-full-form .form-radios .form-type-radio label').click(function() {
-    jQuery('.ctools-auto-submit-full-form .form-radios .form-type-radio label').removeClass('radio-active');
-    jQuery(this).addClass('radio-active');
-  });*/
-
-  /*jQuery('#edit-field-commodity-type-value-0').parents('.form-type-radio label').addClass('radio-active');
-  jQuery('#edit-field-commodity-type-value-0').click(function() {
-    jQuery('#edit-field-commodity-type-value-1').parents('.form-type-radio label').removeClass('radio-active');
-    jQuery('#edit-field-commodity-type-value-0').parents('.form-type-radio label').addClass('radio-active');
+  jQuery(".view-trade-details td.views-field-field-guarantee-stamp" ).each(function() {
+    var td_class = jQuery(this).text();
+    if(td_class == 0) {
+      jQuery(this).append('<div class="not-verified">-</div>');
+    }
+    else {
+      jQuery(this).append('<div class="verified">Verified</div>');
+    }
   });
-  jQuery('#edit-field-commodity-type-value-1').click(function() {
-    jQuery('#edit-field-commodity-type-value-0').parents('.form-type-radio label').removeClass('radio-active');
-    jQuery('#edit-field-commodity-type-value-1').parents('.form-type-radio label').addClass('radio-active');
-  });*/
 
+  /* Ajax call function */
   jQuery(document).ajaxComplete(function() {
     jQuery('.input-file').removeClass('input-file');
     jQuery('input[type="file"]').unwrap('<div class="input-file"><div class="input-file-sub"></div></div>');
@@ -49,22 +45,14 @@ jQuery(document).ready(function() {
       var filename = jQuery(this).val();
       jQuery(this).parents().children(".input-file-name").text(filename);
     });
+
    /* Custom radio button & Checkbox design */
     jQuery('input[type="radio"], input[type="checkbox"]').wrap('<div class="input-rc"></div>');
     jQuery('.input-rc').append('<span class="input-rc-span"></span>');
   /* End */
 
-    /* */
-
-   /* if(jQuery('#edit-field-commodity-type-value-0').attr('checked','true')){
-      jQuery(this).parents('div.form-type-radio label').addClass('radio-active');
-    }
-    if(jQuery('#edit-field-commodity-type-value-1').attr('checked','true')){
-      jQuery(this).parents('div.form-type-radio').addClass('radio-active');
-    }*/
   });
   /* End */
-
 
   jQuery('#views-exposed-form-countrywise-commodities-page div.location_auto_country a').click(function() {
     jQuery('#views-exposed-form-countrywise-commodities-page select#edit-country option').each(function(){
