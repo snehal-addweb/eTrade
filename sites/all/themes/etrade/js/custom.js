@@ -51,6 +51,18 @@ jQuery(document).ready(function() {
     jQuery('.input-rc').append('<span class="input-rc-span"></span>');
   /* End */
 
+  }); 
+  /* End */
+
+  /* Slider */
+    jQuery(".view-home-page-ticker .view-content").owlCarousel({
+      autoPlay: 3000, //Set AutoPlay to 3 seconds 
+      infinite: true,
+      items : 6,
+      slidesToScroll: 6,
+      itemsDesktop : [1199,3],
+      itemsDesktopSmall : [979,3]
+ 
   });
   /* End */
 

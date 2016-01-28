@@ -29,6 +29,7 @@ regions[page_bottom]    = 'Page bottom'
 ;;;;;;;;;;;;;;;;;;;;;
 
 stylesheets[all][] = css/style.css
+stylesheets[all][] = css/owl.carousel.css
 
 
 ; For information on choosing the desired method, please read the Drupal
@@ -56,6 +57,7 @@ stylesheets[all][] = css/style.css
 ; scripts[] = 'bootstrap/js/tab.js'
 ; scripts[] = 'bootstrap/js/transition.js'
 scripts[] = 'js/custom.js'
+scripts[] = 'js/owl.carousel.js'
 ;
 ; ; Disable BootstrapCDN if using Bootstrap source files in your sub-theme.
 ; settings[bootstrap_cdn] = ''
