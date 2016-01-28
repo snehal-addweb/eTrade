@@ -58,12 +58,15 @@ jQuery(document).ready(function() {
     jQuery(".view-home-page-ticker .view-content").owlCarousel({
       autoPlay: 3000, //Set AutoPlay to 3 seconds 
       infinite: true,
+      direction: "left",
       items : 6,
+      loop : false,
       slidesToScroll: 6,
-      itemsDesktop : [1199,3],
-      itemsDesktopSmall : [979,3]
- 
-  });
+      itemsDesktop : [1199,4],
+      itemsDesktopSmall : [979,4]
+
+    });
+     /*jQuery(".view-home-page-ticker .view-content").carousel('cycle');*/
   /* End */
 
   jQuery('#views-exposed-form-countrywise-commodities-page div.location_auto_country a').click(function() {

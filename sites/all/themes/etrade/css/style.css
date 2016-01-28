@@ -73,6 +73,7 @@ a:focus { outline: none; }
           border-radius: 0;
 }
 #navbar .navbar-header {
+  float: left;
   display: inline-block;
   width: 100%;
   max-width: 300px;
@@ -139,7 +140,7 @@ a:focus { outline: none; }
 .tb-megamenu .tb-megamenu-nav li a {
   display: inline-block;
   width: 100%;
-  padding: 15px 30px;
+  padding: 12px 30px;
   border: 0;  
   color: #fff;
   font-size: 18px;
@@ -151,7 +152,7 @@ a:focus { outline: none; }
   background: url("../images/main-menu-divider.png");
   background-repeat:  no-repeat;
   background-position: right center;
-  background-size:  auto 100%;
+  background-size:  2px 51px;
 }
 .tb-megamenu .tb-megamenu-nav li:nth-child(1) a:before {
   display: inline-block;
@@ -1784,7 +1785,7 @@ input[type="file"] { padding: 0; }
   width: -webkit-calc(100% - 170px);
   width:    -moz-calc(100% - 170px);
   width:         calc(100% - 170px);
-  padding: 5px 0 0;
+  padding: 10px 0 0;
   vertical-align: top;
 }
 .head-comm #block-views-80f5b3625a0821708f08af0155e6cf76 {
@@ -1865,7 +1866,11 @@ input[type="file"] { padding: 0; }
 /* Small desktop monitor view */
 @media screen and (max-width: 1200px) {
   /* Header */
-  #navbar .region-top-header { padding: 20px; }
+  /*#navbar .region-top-header { padding: 20px; }*/
+  .tb-megamenu .tb-megamenu-nav li a {
+    padding: 12px 18px;
+    font-size: 17px;
+  }
   /* End */
 
   /* Registration page */
@@ -1987,6 +1992,50 @@ input[type="file"] { padding: 0; }
 
 } /* 992px */
 
+@media screen and (max-width: 980px) {
+  .tb-megamenu .btn-navbar {
+    float: right;
+    max-width: 100%;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    font-size: 30px;
+  }
+  .tb-megamenu .btn-navbar:hover,
+  .tb-megamenu .btn-navbar:focus {
+    background: none;
+  }
+  .tb-megamenu .tb-megamenu-nav li {
+    float: left;
+    width: 100%;
+    text-align: left;
+  }
+   #block-system-main-menu .menu li a {
+    width: 100%;
+    background-image: none;
+  }
+  .tb-megamenu .tb-megamenu-nav li > a {
+    background-image: none;
+    border: none !important;
+  }
+  .tb-megamenu .nav li a:focus,
+  .tb-megamenu .nav li a:hover,
+  .tb-megamenu .nav li.dropdown.open > .dropdown-toggle {
+    background-color: #c2020e !important;
+    color: #fff !important;
+    text-decoration: none;
+  }
+  .tb-megamenu .nav > .active > a,
+  .tb-megamenu .nav > .active > a:hover,
+  .tb-megamenu .nav > .active > a:focus {
+    background-color: #c2020e !important;
+  }
+  
+}
+
+
 /* Mobile landscape & portrait view */
 @media screen and (max-width: 767px) {
   .main-custom-content,
@@ -1996,32 +2045,26 @@ input[type="file"] { padding: 0; }
   }
   .main-custom-content-right { margin-top: 50px; }
 
-
   /* Header */
   #navbar .navbar-header {
+    max-width: 100%;
+    margin: 20px 0 0 0;
+    text-align: center;
+  }
+  #navbar .navbar-header .logo {
+    float: none !important;
+  }
+  #navbar .region-top-header {
     width: 100%;
-    margin: 0;
+    padding: 30px 0;
   }
-  .navbar .logo { padding: 0;}
-  .navbar-toggle {
-    float: right;
-    margin-right: 0;
+  .navbar-collapse.collapse { display: inline-block;}
+  .tb-megamenu .nav-collapse { 
+    float: left;
+    width: calc(100% + 30px);
+    margin: 14px -15px 0; 
   }
-  .navbar-collapse {
-    position: absolute;
-    top: 50px;
-    z-index: 999;
-  }
-  .region-navigation { margin: 0 -15px;}
-  #block-system-main-menu .menu,
-  #block-system-main-menu .menu li {
-    width: 100%;
-    text-align: left;
-  }
-  #block-system-main-menu .menu li a {
-    width: 100%;
-    background-image: none;
-  }
+  .navbar-default .navbar-toggle { display: none; }
   /* End */
 
   /* Registration page */
@@ -2062,6 +2105,18 @@ input[type="file"] { padding: 0; }
 
 /* Mobile portrait view only */
 @media screen and (max-width: 480px) {
+
+  /* Header */
+   #navbar .navbar-header .logo {
+    float: none !important;
+    margin: 0;
+    padding: 0;
+  }
+  #navbar .navbar-header .logo img {
+    width: 100%;
+    height: auto;
+  }
+  /* End */
   /* Footer */
   .footer #block-block-5,
   .footer #block-menu-menu-footer-link-1,
