@@ -235,7 +235,13 @@ a:focus { outline: none; }
 }
 .logged-in #block-md-slider-home-page-slider {
   width: 100%;
-  margin: 0;
+  margin: 0 0 20px 0;
+}
+.logged-in .md-slide-wrap {
+  max-height: 300px !important;
+  width: 100%;
+}
+.logged-in #block-md-slider-home-page-slider img {
 }
 /* End */
 
@@ -539,8 +545,9 @@ a:focus { outline: none; }
 }
 .main-custom-content {
   float: left;
-  width: calc(70% - 20px);
-  margin: 0 20px 0 0;
+  /*width: calc(70% - 20px);
+  margin: 0 20px 0 0;*/
+  width: 100%;
 }
 .main-custom-content-right {
   float: left;
@@ -1154,8 +1161,6 @@ input[type="file"] { padding: 0; }
   text-transform: uppercase;
 }
 .view-countrywise-commodities .table > thead > tr {
-  /*border-top: 2px dotted #000;
-  border-bottom: 2px dotted #000;*/
   background-image: url("../images/dot.png"), url("../images/dot.png");
   background-position: top, bottom;
   background-size: 29px 2px;
@@ -1182,6 +1187,67 @@ input[type="file"] { padding: 0; }
 .view-countrywise-commodities .view-content table .views-field-delete-node a {
   color: #e71029;
 }
+
+/* Buy and sell container design */
+.buy-main-container,
+.sell-main-container {
+  float: left;
+  width: 47%;
+  margin: 0 6% 0 0;
+}
+.sell-main-container {
+  margin: 0;
+}
+.buy-main-container thead tr {
+  background-color: #08086b;
+  color: #fff;
+}
+.sell-main-container thead tr {
+  background-color: #ff1c32;
+  color: #fff;
+}
+.buy-main-container tbody tr,
+.buy-main-container tbody tr a,
+.sell-main-container tbody tr,
+.sell-main-container tbody tr a {
+  color: #fff;
+}
+.buy-main-container tbody tr:nth-of-type(2n+1) {
+  background-color: #29296b;
+}
+.buy-main-container tbody tr.even {
+  background-color: #36366b;
+}
+.sell-main-container tbody tr:nth-of-type(2n+1) {
+  background-color: #ff5d6d;
+}
+.sell-main-container tbody tr.even {
+  background-color: #ff8a95;
+}
+.buy-main-container caption,
+.sell-main-container caption {
+  max-width: 150px;
+  padding: 10px 30px;
+  margin-bottom: 20px;
+  border-top: 1px solid #fff;
+  color: #fff;
+  border-bottom: 1px solid #ddd;
+  font-family: opensans-semibold;
+  font-size: 16px;
+  text-transform: capitalize;
+  text-align: center;
+  -webkit-box-shadow: 1px 0 0 0 rgba(0, 0, 0, 0.2);
+     -moz-box-shadow: 1px 0 0 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 0 0 0 rgba(0, 0, 0, 0.2);
+}
+.buy-main-container caption {
+  background-color: #08086b;
+}
+.sell-main-container caption {
+  background-color: #e71029;
+}
+/* End */
+
 .view-footer .add-commodity {
   display: inline-block;
   width: 100%;
@@ -1234,9 +1300,6 @@ input[type="file"] { padding: 0; }
 }
 .page-dashboard .view-filters .form-type-radio:first-child {
   display: none;
-}
-.page-dashboard .view-filters .form-type-radio {
-
 }
 .view-countrywise-commodities .view-empty {
   display: inline-block;
@@ -1827,6 +1890,7 @@ input[type="file"] { padding: 0; }
     width:    -moz-calc(70% - 20px);
     width:         calc(70% - 20px);
   }
+  .logged-in #block-md-slider-home-page-slider { width: 100%; }
   .page-home #block-user-login,
   .page-home .custom-grid .panels-flexible-region-last {
     width: 30%;
