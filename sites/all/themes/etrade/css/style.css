@@ -1199,30 +1199,30 @@ input[type="file"] { padding: 0; }
   margin: 0;
 }
 .buy-main-container thead tr {
-  background-color: #08086b;
+  background-color: #29296b;
   color: #fff;
 }
 .sell-main-container thead tr {
-  background-color: #ff1c32;
+  background-color: #ff5d6d;
   color: #fff;
 }
 .buy-main-container tbody tr,
 .buy-main-container tbody tr a,
 .sell-main-container tbody tr,
 .sell-main-container tbody tr a {
-  color: #fff;
+  /*color: #fff;*/
 }
 .buy-main-container tbody tr:nth-of-type(2n+1) {
-  background-color: #29296b;
+  background-color: #d9edf7;
 }
 .buy-main-container tbody tr.even {
-  background-color: #36366b;
+  /*background-color: #AAD4FF;*/
 }
 .sell-main-container tbody tr:nth-of-type(2n+1) {
-  background-color: #ff5d6d;
+  background-color: #f2dede;
 }
 .sell-main-container tbody tr.even {
-  background-color: #ff8a95;
+  /*background-color: #ff8a95;*/
 }
 .buy-main-container caption,
 .sell-main-container caption {
