@@ -8,6 +8,36 @@
  */
 
 
+function etrade_misc_menu() {
+  $items['order-accept/%/%'] = array(
+	  'title' => t('Accept Order'),
+		'description' => 'User will accept order if he is intrested',
+		'page arguments' => array(1,2),
+		'page callback' => 'etrade_order_accept',
+		'access arguments' => array('access content'),
+  );
+
+  return $items;
+}
+
+function etrade_order_accept($arg1, $arg2){
+
+	global $user;
+  global $base_url;
+  if($arg2 == 0){
+  	$redirect = 'trade-details';
+  }
+  else{
+  	$redirect = 'trade-details?page='. $arg2;
+  }
+  $another_user = $user->uid;
+  $node_info = node_load($arg1);
+  $node_info->field_another_user[LANGUAGE_NONE][0]['value'] = $another_user;
+  node_save($node_info);
+  drupal_goto($redirect);
+  drupal_set_message("Your request for order has been sent successfully");
+}
+
 function etrade_misc_node_presave($node){
 	/*global $user;
 	if($node->type == 'user_profile'){
@@ -71,6 +101,6 @@ function etrade_misc_form_views_exposed_form_alter(&$form, $form_state, $form_id
   if($form['#form_id'] == 'views_exposed_form' && $form['#id'] == 'views-exposed-form-countrywise-commodities-block-1'){
     $form['field_commodity_type_value']['#options'][0] = 'Buy Order';
     $form['field_commodity_type_value']['#options'][1] = 'Sell Order';
-  }
-  
+  }  
 }
+
