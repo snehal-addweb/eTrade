@@ -1875,6 +1875,22 @@ input[type="file"] { padding: 0; }
 
 
 /**
+ * Career 
+ */
+.page-node-3 #block-system-main {
+  float: left;
+  width: 45%;
+  margin-right: 10%;
+}
+.page-node-3 #block-webform-client-block-92 {
+  float: right;
+  width: 45%;
+}
+
+/* End */
+
+
+/**
  * Responsive design
  */
 
