@@ -56,15 +56,15 @@ jQuery(document).ready(function() {
 
   /* Slider */
     jQuery(".view-home-page-ticker .view-content").owlCarousel({
-      autoPlay: 3000, //Set AutoPlay to 3 seconds 
+      autoplay:true,
+      autoplayTimeout:1000,
       infinite: true,
       direction: "left",
       items : 6,
-      loop : false,
+      loop : true,
       slidesToScroll: 6,
       itemsDesktop : [1199,4],
       itemsDesktopSmall : [979,4]
-
     });
      /*jQuery(".view-home-page-ticker .view-content").carousel('cycle');*/
   /* End */
