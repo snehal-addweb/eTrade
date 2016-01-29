@@ -165,6 +165,45 @@ a:focus { outline: none; }
   background-size:  auto 100%;
   content: "";
 }
+.tb-megamenu .mega > .mega-dropdown-menu {
+  min-width: 100%;
+}
+
+#block-views-80f5b3625a0821708f08af0155e6cf76 {
+  float: right;
+  display: inline-block;
+  width: 100%;
+  padding: 7px 0;
+  background-color: #E71029;
+  text-align: center;
+  color: #fff;
+  vertical-align: top;
+}
+#block-views-80f5b3625a0821708f08af0155e6cf76 .form-type-select:before {
+  background: transparent;
+}
+#block-views-80f5b3625a0821708f08af0155e6cf76 * {
+  padding: 0;
+  margin: 0;
+}
+#block-views-80f5b3625a0821708f08af0155e6cf76 .views-exposed-form .views-exposed-widget {
+  width: 100%;
+  padding: 0;
+}
+#block-views-80f5b3625a0821708f08af0155e6cf76 .chosen-container,
+#block-views-80f5b3625a0821708f08af0155e6cf76 .chosen-container a {
+  min-height: auto;
+  height: auto;
+  width: 100% !important;
+  border: none;
+  background: transparent;
+  box-shadow: none;
+  color: #fff;
+}
+
+
+
+
 .tb-megamenu .tb-megamenu-nav li:last-child a {
   background: transparent;
 }
@@ -1787,48 +1826,11 @@ input[type="file"] { padding: 0; }
   width: auto;
   padding: 0;
 }
-/*.header-commodities .view-header {
-  padding-right: 20px;
-}*/
 .head-comm #block-views-home-page-ticker-block-1 {
   display: inline-block;
-  width: -webkit-calc(100% - 170px);
-  width:    -moz-calc(100% - 170px);
-  width:         calc(100% - 170px);
+  width: 100%;
   padding: 10px 0 0;
   vertical-align: top;
-}
-.head-comm #block-views-80f5b3625a0821708f08af0155e6cf76 {
-  float: right;
-  display: inline-block;
-  width: 160px;
-  max-width: 160px;
-  padding: 7px 0;
-  background-color: #08086b;
-  text-align: center;
-  color: #fff;
-  vertical-align: top;
-}
-.head-comm #block-views-80f5b3625a0821708f08af0155e6cf76 .form-type-select:before {
-  background: transparent;
-}
-.head-comm #block-views-80f5b3625a0821708f08af0155e6cf76 * {
-  padding: 0;
-  margin: 0;
-}
-.head-comm #block-views-80f5b3625a0821708f08af0155e6cf76 .views-exposed-form .views-exposed-widget {
-  width: 100%;
-  padding: 0;
-}
-.head-comm #block-views-80f5b3625a0821708f08af0155e6cf76 .chosen-container,
-.head-comm #block-views-80f5b3625a0821708f08af0155e6cf76 .chosen-container a {
-  min-height: auto;
-  height: auto;
-  width: 100% !important;
-  border: none;
-  background: transparent;
-  box-shadow: none;
-  color: #fff;
 }
 /*.header-commodities .view-header .com-title {
   color: 668b97;
