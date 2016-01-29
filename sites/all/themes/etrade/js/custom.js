@@ -54,19 +54,32 @@ jQuery(document).ready(function() {
   }); 
   /* End */
 
-  /* Slider */
+  /* Commodities Slider */
     jQuery(".view-home-page-ticker .view-content").owlCarousel({
       autoplay:true,
       autoplayTimeout:1000,
       infinite: true,
       direction: "left",
-      items : 6,
+      items : 7,
       loop : true,
-      slidesToScroll: 6,
+      slidesToScroll: 7,
       itemsDesktop : [1199,4],
       itemsDesktopSmall : [979,4]
     });
-     /*jQuery(".view-home-page-ticker .view-content").carousel('cycle');*/
+  /* End */
+
+  /* Commodities Slider */
+    jQuery(".view-testimonials .view-content").owlCarousel({
+      autoplay:true,
+      autoplayTimeout:1000,
+      infinite: true,
+      direction: "left",
+      items : 1,
+      loop : true,
+      slidesToScroll: 1,
+      itemsDesktop : [1199,4],
+      itemsDesktopSmall : [979,4]
+    });
   /* End */
 
   jQuery('#views-exposed-form-countrywise-commodities-page div.location_auto_country a').click(function() {
