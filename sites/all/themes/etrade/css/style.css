@@ -1887,21 +1887,34 @@ input[type="file"] { padding: 0; }
  */
 .page-node-3 #block-views-careers-listing-block {
   float: left;
-  width: 45%;
-  margin-right: 10%;
+  width: 50%;
+  margin-right: 5%;
 }
 .page-node-3 #block-webform-client-block-92 {
   float: right;
   width: 45%;
 }
 .career-listing .ui-accordion .views-row {
-  margin-bottom: 5px;
+  margin-bottom: 7px;
 }
 .career-listing .ui-accordion .views-field-title {
   background: #08086b;
+  border: none;
 }
 .career-listing .ui-accordion .views-field-title a {
   color: #fff;
+}
+.career-listing .ui-accordion .ui-accordion-content .views-label {
+  display: inline-block;
+  margin-right: 3px;
+  font-family: OpenSans-Bold;
+}
+.career-listing .ui-accordion .ui-accordion-content .field-content {
+  display: inline-block;
+}
+.career-listing .ui-accordion .ui-accordion-content .views-field-body {
+  margin-top: 10px;
+  font-size: 15px;
 }
 /* End */
 
