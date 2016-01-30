@@ -1885,7 +1885,7 @@ input[type="file"] { padding: 0; }
 /**
  * Career 
  */
-.page-node-3 #block-system-main {
+.page-node-3 #block-views-careers-listing-block {
   float: left;
   width: 45%;
   margin-right: 10%;
@@ -1894,7 +1894,15 @@ input[type="file"] { padding: 0; }
   float: right;
   width: 45%;
 }
-
+.career-listing .ui-accordion .views-row {
+  margin-bottom: 5px;
+}
+.career-listing .ui-accordion .views-field-title {
+  background: #08086b;
+}
+.career-listing .ui-accordion .views-field-title a {
+  color: #fff;
+}
 /* End */
 
 
