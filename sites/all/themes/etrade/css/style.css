@@ -140,7 +140,7 @@ a:focus { outline: none; }
 .tb-megamenu .tb-megamenu-nav li a {
   display: inline-block;
   width: 100%;
-  padding: 12px 25px;
+  padding: 12px 22px;
   border: 0;  
   color: #fff;
   font-size: 16px;
@@ -1177,7 +1177,7 @@ input[type="file"] { padding: 0; }
   height: auto;
 }
 /* view Commodities */
-.view-countrywise-commodities {
+/*.view-countrywise-commodities {
   display: inline-block;
   width: 100%;
   max-width: 640px;
@@ -1190,34 +1190,34 @@ input[type="file"] { padding: 0; }
   padding: 10px 20px;
   background-color: #fff;
   vertical-align: top;
-}
+}*/
 .view-countrywise-commodities .text-center {
   padding-top: 0;
   text-align: left;
 }
-.view-countrywise-commodities .table caption {
+/*.view-countrywise-commodities .table caption {
   padding: 0 0 10px;
   color: #3c454c;
   font-family: opensans-bold;
   font-size: 18px;
   text-transform: uppercase;
-}
-.view-countrywise-commodities .table > thead > tr {
+}*/
+/*.view-countrywise-commodities .table > thead > tr {
   background-image: url("../images/dot.png"), url("../images/dot.png");
   background-position: top, bottom;
   background-size: 29px 2px;
   background-repeat: repeat-x;
   content: "";
-}
-.view-countrywise-commodities .table > thead > tr > th {
+}*/
+/*.view-countrywise-commodities .table > thead > tr > th {
   border-bottom: none;
   font-weight: normal;
-}
-.view-countrywise-commodities .view-content tbody tr {
+}*/
+/*.view-countrywise-commodities .view-content tbody tr {
   background-color: transparent;
   border-bottom: 1px dashed #ccc;
-}
-.view-countrywise-commodities .view-content table tr td {
+}*/
+/*.view-countrywise-commodities .view-content table tr td {
   border-top: 0;
   color: #000;
   background-color: transparent;
@@ -1225,7 +1225,7 @@ input[type="file"] { padding: 0; }
 }
 .view-countrywise-commodities .view-content table tr td a {
   font-family: OpenSans-Regular;
-}
+}*/
 .view-countrywise-commodities .view-content table .views-field-delete-node a {
   color: #e71029;
 }
@@ -1248,6 +1248,10 @@ input[type="file"] { padding: 0; }
   background-color: #ff5d6d;
   color: #fff;
 }
+.buy-main-container thead tr th,
+.sell-main-container thead tr th {
+  vertical-align: top;
+}
 .buy-main-container tbody tr,
 .buy-main-container tbody tr a,
 .sell-main-container tbody tr,
@@ -1268,8 +1272,8 @@ input[type="file"] { padding: 0; }
 }
 .buy-main-container caption,
 .sell-main-container caption {
-  max-width: 150px;
-  padding: 10px 30px;
+  max-width: 160px;
+  padding: 10px;
   margin-bottom: 20px;
   border-top: 1px solid #fff;
   color: #fff;
@@ -1343,13 +1347,13 @@ input[type="file"] { padding: 0; }
 .page-dashboard .view-filters .form-type-radio:first-child {
   display: none;
 }
-.view-countrywise-commodities .view-empty {
+/*.view-countrywise-commodities .view-empty {
   display: inline-block;
   width: 100%;
   padding: 20px;
   background-color: #fff;
   font-size: 16px;
-}
+}*/
 .flag-waiting .flag-throbber,
 .node-commodity-form .tabbable {
   display: none;
@@ -1851,11 +1855,15 @@ input[type="file"] { padding: 0; }
 .header-commodities .view-content .views-row {
   float: left;
   display: inline-block;
-  padding: 0 45px;
+  min-height: 51px;
+  min-width: 160px;
+  padding: 0 10px;
   background-image: url('../images/head-comm-divider.png');
   background-size: 3px 51px;
   background-position: center right;
   background-repeat: no-repeat;
+  text-align: center;
+  vertical-align: middle;
 }
 /*.header-commodities .view-content .views-row.views-row-last {
   background-image: none;
@@ -1877,16 +1885,37 @@ input[type="file"] { padding: 0; }
 /**
  * Career 
  */
-.page-node-3 #block-system-main {
+.page-node-3 #block-views-careers-listing-block {
   float: left;
-  width: 45%;
-  margin-right: 10%;
+  width: 50%;
+  margin-right: 5%;
 }
 .page-node-3 #block-webform-client-block-92 {
   float: right;
   width: 45%;
 }
-
+.career-listing .ui-accordion .views-row {
+  margin-bottom: 7px;
+}
+.career-listing .ui-accordion .views-field-title {
+  background: #08086b;
+  border: none;
+}
+.career-listing .ui-accordion .views-field-title a {
+  color: #fff;
+}
+.career-listing .ui-accordion .ui-accordion-content .views-label {
+  display: inline-block;
+  margin-right: 3px;
+  font-family: OpenSans-Bold;
+}
+.career-listing .ui-accordion .ui-accordion-content .field-content {
+  display: inline-block;
+}
+.career-listing .ui-accordion .ui-accordion-content .views-field-body {
+  margin-top: 10px;
+  font-size: 15px;
+}
 /* End */
 
 
