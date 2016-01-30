@@ -1195,6 +1195,9 @@ input[type="file"] { padding: 0; }
   padding-top: 0;
   text-align: left;
 }
+..view-countrywise-commodities .view-header {
+  font-size: 24px;
+}
 /*.view-countrywise-commodities .table caption {
   padding: 0 0 10px;
   color: #3c454c;
@@ -1837,7 +1840,7 @@ input[type="file"] { padding: 0; }
   vertical-align: top;
 }
 /*.header-commodities .view-header .com-title {
-  color: 668b97;
+  color: #668b97;
   font-family: arial;
   font-weight: bold;
   font-size: 14px;
