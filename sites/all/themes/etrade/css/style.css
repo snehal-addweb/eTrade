@@ -2181,6 +2181,13 @@ input[type="file"] { padding: 0; }
     padding-right: 0;
   }
   /* End */
+  /* Buy and sell container design */
+  .buy-main-container,
+  .sell-main-container {
+    float: left;
+    width: 100%;
+    margin: 0 0 30px 0;
+  }
 } /* 767px */
 
 /* Mobile portrait view only */
