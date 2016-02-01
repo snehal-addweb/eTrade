@@ -149,6 +149,7 @@ a:focus { outline: none; }
   text-transform: uppercase;
 }
 .tb-megamenu .tb-megamenu-nav li > a {
+  min-height: 51px;
   background: url("../images/main-menu-divider.png");
   background-repeat:  no-repeat;
   background-position: right center;
