@@ -55,30 +55,20 @@ jQuery(document).ready(function() {
   /* End */
 
   /* Commodities Slider */
-    jQuery(".view-home-page-ticker .view-content").owlCarousel({
-      autoplay:true,
-      autoplayTimeout:1000,
-      infinite: true,
-      direction: "left",
-      items : 7,
-      loop : true,
-      slidesToScroll: 7,
-      itemsDesktop : [1199,4],
-      itemsDesktopSmall : [979,4]
-    });
+  jQuery(".view-home-page-ticker .view-content").simplyScroll();
   /* End */
 
-  /* Commodities Slider */
+  /* Header Slider */
     jQuery(".view-testimonials .view-content").owlCarousel({
       autoplay:true,
-      autoplayTimeout:1000,
+      autoplayTimeout:2000,
       infinite: true,
       direction: "left",
       items : 1,
       loop : true,
       slidesToScroll: 1,
-      itemsDesktop : [1199,4],
-      itemsDesktopSmall : [979,4]
+      itemsDesktop : [1199,1],
+      itemsDesktopSmall : [979,1]
     });
   /* End */
 

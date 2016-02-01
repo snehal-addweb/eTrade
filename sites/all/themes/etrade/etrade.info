@@ -30,6 +30,7 @@ regions[page_bottom]    = 'Page bottom'
 
 stylesheets[all][] = css/style.css
 stylesheets[all][] = css/owl.carousel.css
+stylesheets[all][] = css/jquery.simplyscroll.css
 
 
 ; For information on choosing the desired method, please read the Drupal
@@ -58,6 +59,7 @@ stylesheets[all][] = css/owl.carousel.css
 ; scripts[] = 'bootstrap/js/transition.js'
 scripts[] = 'js/custom.js'
 scripts[] = 'js/owl.carousel.js'
+scripts[] = 'js/jquery.simplyscroll.js'
 ;
 ; ; Disable BootstrapCDN if using Bootstrap source files in your sub-theme.
 ; settings[bootstrap_cdn] = ''
