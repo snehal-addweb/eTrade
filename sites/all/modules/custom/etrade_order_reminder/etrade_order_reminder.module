@@ -1,0 +1,67 @@
+<?php
+
+/**
+ * @file
+ * Main file for the Etrade order remider module, which containg crons to remider admin before X 
+ * days of loading latest date field
+ * 
+ * @ingroup etrade_misc
+ */
+
+
+function etrade_order_reminder_cron() {
+
+	$days_diff = 3;
+	$component = 'rules_admin_order_reminder_component';
+
+	$node_type = "commodity"; 
+	$nodes = node_load_multiple(NULL, array('type' => $node_type));
+
+	$nids = array();
+	foreach ($nodes as $node) {
+	  $nids[] = $node->nid;
+
+	  /*$node->field_latest_loading_date[LANGUAGE_NONE][0]['value'];
+	  $node->field_admin_notified[LANGUAGE_NONE][0]['value'];
+	  $node->field_buyer_commission[LANGUAGE_NONE][0]['value'];
+	  $node->field_seller_commission[LANGUAGE_NONE][0]['value'];
+	  $node->field_another_user[LANGUAGE_NONE][0]['value']; */
+
+	  if (!empty($node->field_buyer_commission[LANGUAGE_NONE][0]['value']) && !empty($node->field_seller_commission[LANGUAGE_NONE][0]['value']) && !empty($node->field_another_user[LANGUAGE_NONE][0]['value']) && ($node->field_admin_notified[LANGUAGE_NONE][0]['value'] == 'N')) {
+	  	
+	  		
+	  		//get date diff
+	  		if (!empty($node->field_latest_loading_date[LANGUAGE_NONE][0]['value'])) {
+
+	  			$latest_date = date('Y-m-d', strtotime($node->field_latest_loading_date[LANGUAGE_NONE][0]['value']));
+	  			$today = date('Y-m-d');
+
+
+				$datediff = strtotime($latest_date) - strtotime($today);
+
+				$diff = floor($datediff/(60*60*24));
+
+
+				//if latest date diff is same as days_diff or smaller than diff, allow to send reminder to admin
+				if ($diff <= $days_diff) {
+					
+					//invoke component to send mail admin and update node to notified
+					rules_invoke_component($component, $node);
+
+				}
+	  		}
+	  	}
+	}
+	
+	//$component = 'rules_admin_order_reminder_component';
+	//$task_identifier = 'order_reminder_identifier';
+
+	/*rules_action('schedule', array('component' => $component))->executeByArgs(array(
+		'date' => time (); 
+		'identifier' => 'identifier',
+		// Add component parameters, prefixed with 'param_'
+		'param_x' => $x,
+		'param_y' => $y,
+	)); */
+
+}
