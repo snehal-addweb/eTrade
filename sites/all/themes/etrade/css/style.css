@@ -1363,18 +1363,18 @@ input[type="file"] { padding: 0; }
 /* End */
 
 /* List of commodities*/
-.view-list-of-commodities {
+.main-grey-container .region-content .view-list-of-commodities {
   display: inline-block;
   width: 100%;
   padding: 10px;
   background-color: #fff;
 }
-.view-list-of-commodities .views-row {
+.main-grey-container .region-content .view-list-of-commodities .views-row {
   display: inline-block;
   width: 100%;
   padding: 5px 10px;
 }
-.view-list-of-commodities .views-row a {
+.main-grey-container .region-content .view-list-of-commodities .views-row a {
   color: #08086b;
   font-family: OpenSans-Semibold;
   font-size: 18px;
