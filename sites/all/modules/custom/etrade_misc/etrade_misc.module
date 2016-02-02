@@ -129,12 +129,13 @@ function etrade_misc_form_commodity_node_form_alter(&$form, $form_state, $form_i
 	        }
 	    }
 
-		$form['seller'] = array(
+		/*$form['seller'] = array(
 	      '#type' => 'textfield',
 	      '#title' => t('Seller Name'),
 		  '#default_value' => $seller,
 		  '#weight' => 2,
 		  '#attributes' => array('readonly' => 'readonly'),
+		  '#prefix' => '<div class="group-user-profile-right">', '#suffix' => '</div>',
 	    );
 
 	    $form['buyer'] = array(
@@ -143,7 +144,12 @@ function etrade_misc_form_commodity_node_form_alter(&$form, $form_state, $form_i
 		  '#default_value' => $buyer,
 		  '#weight' => 2,
 		  '#attributes' => array('readonly' => 'readonly'),
-	    );
+		  '#prefix' => '<div class="group-user-profile-right">', '#suffix' => '</div>',
+	    ); */
+
+	    $form['field_buyer_commission']['#prefix'] = '<div class="buyer-name"> <span>Buyer Name:</span>' . $buyer . '</div>';
+	    $form['field_buyer_commission']['#prefix'] .= '<div class="seller-name"> <span>Seller Name:</span>' . $seller . '</div>';
+	    
 	}
 } 
 

@@ -1890,6 +1890,20 @@ input[type="file"] { padding: 0; }
 }
 /* End */
 
+.buyer-name,
+.seller-name {
+  margin: 0 0 10px;
+}
+.seller-name {
+  margin-bottom: 20px;
+}
+.buyer-name span,
+.seller-name span {
+  display: inline-block;
+  width: 100px;
+  font-family: OpenSans-Semibold;
+}
+
 
 /**
  * Responsive design
