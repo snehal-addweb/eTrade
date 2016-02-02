@@ -147,6 +147,7 @@ a:focus { outline: none; }
   line-height: normal;
   vertical-align: middle;
   text-transform: uppercase;
+  white-space: normal;
 }
 .tb-megamenu .tb-megamenu-nav li > a {
   min-height: 51px;
@@ -1362,10 +1363,10 @@ input[type="file"] { padding: 0; }
 .node-commodity-form .tabbable {
   display: none;
 }
-.view-trade-details td.views-field-field-guarantee-stamp {
+.views-table td.views-field-field-guarantee-stamp {
   font-size: 0;
 }
-.view-trade-details td.views-field-field-guarantee-stamp .verified:after {
+.views-table td.views-field-field-guarantee-stamp .verified:after {
   display: inline-block;
   height: 30px;
   width: 30px;
@@ -1377,8 +1378,8 @@ input[type="file"] { padding: 0; }
   content: "";
   vertical-align: middle;
 }
-.view-trade-details td.views-field-field-guarantee-stamp .verified,
-.view-trade-details td.views-field-field-guarantee-stamp .not-verified {
+.views-table td.views-field-field-guarantee-stamp .verified,
+.views-table td.views-field-field-guarantee-stamp .not-verified {
   font-size: 14px;
   vertical-align: middle;
   white-space: nowrap;

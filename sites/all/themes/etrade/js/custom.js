@@ -24,7 +24,8 @@ jQuery(document).ready(function() {
   });
   /* End */
 
-  jQuery(".view-trade-details td.views-field-field-guarantee-stamp" ).each(function() {
+  /* Verified order design*/
+  jQuery(".views-table td.views-field-field-guarantee-stamp" ).each(function() {
     var td_class = jQuery(this).text();
     if(td_class == 0) {
       jQuery(this).append('<div class="not-verified">-</div>');
@@ -33,6 +34,7 @@ jQuery(document).ready(function() {
       jQuery(this).append('<div class="verified">Verified</div>');
     }
   });
+  /* End */
 
   /* Ajax call function */
   jQuery(document).ajaxComplete(function() {
