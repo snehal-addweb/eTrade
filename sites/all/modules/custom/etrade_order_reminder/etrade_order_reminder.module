@@ -21,7 +21,7 @@ function etrade_order_reminder_cron() {
 	foreach ($nodes as $node) {
 
 		//check if comission value is not null and order is accepted
-	  	if (!empty($node->field_buyer_commission[LANGUAGE_NONE][0]['value']) && !empty($node->field_seller_commission[LANGUAGE_NONE][0]['value']) && !empty($node->field_another_user[LANGUAGE_NONE][0]['value']) && ($node->field_admin_notified[LANGUAGE_NONE][0]['value'] == 'N')) {
+	  	if (!empty($node->field_buyer_commission[LANGUAGE_NONE]) && !empty($node->field_seller_commission[LANGUAGE_NONE]) && !empty($node->field_another_user[LANGUAGE_NONE]) && ($node->field_admin_notified[LANGUAGE_NONE][0]['value'] == 'N')) {
 	  		
 	  		//get date diff
 	  		if (!empty($node->field_latest_loading_date[LANGUAGE_NONE][0]['value'])) {
