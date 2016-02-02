@@ -1,5 +1,5 @@
 name = Etrade Order Reminder
-description = Cron to reminde order before X days of latest loading date.
+description = Cron to reminder order before X days of latest loading date.
 package = Etrade Custom
 core = 7.x
 version = 7.x
