@@ -729,7 +729,8 @@ input[type="file"] + .input-group-btn button {
   width: auto;
 }
 .change-pass,
-.btn {
+.btn,
+#edit-actions #edit-cancel {
   height: 40px;
   max-width: 265px;
   width: 100%;
@@ -742,16 +743,21 @@ input[type="file"] + .input-group-btn button {
   font-size: 15px;
   text-transform: uppercase;
   text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
   -webkit-border-radius: 4px;
      -moz-border-radius: 4px;
           border-radius: 4px;
 }
- .change-pass {
+.change-pass,
+ #edit-actions #edit-cancel  {
   display: inline-block;
   padding: 8px 12px;
  }
- .change-pass:hover,
- .change-pass:focus {
+.change-pass:hover,
+.change-pass:focus,
+#edit-actions #edit-cancel:hover,
+#edit-actions #edit-cancel:focus {
   color: #fff;
   outline: none;
   opacity: 0.8;
@@ -764,8 +770,8 @@ input[type="file"] + .input-group-btn button {
 .btn-default:focus,
 .btn-default:active,
 .btn-danger:active {
-  background-color: #08086b;
-  color: #fff;
+  background-color: #08086b !important;
+  color: #fff !important;
   outline: none;
   opacity: 0.8;
 }
@@ -774,6 +780,14 @@ input[type="file"] + .input-group-btn button {
 .btn-danger:focus,
 .btn-danger:hover,
 .btn-danger:active {
+  background-color: #08086b !important;
+}
+.btn-success.disabled,
+.btn-success[disabled],
+.btn-success.active,
+.btn-success:focus,
+.btn-success:hover,
+.btn-success:active {
   background-color: #08086b !important;
 }
 
@@ -1412,6 +1426,9 @@ input[type="file"] { padding: 0; }
   margin-bottom: 5px;
   font-size: 15px;
 }
+.field-type-datetime .date-combo .panel-body .control-label {
+  display: none;
+}
 .field-type-datetime .date-combo .panel-body .date-no-float { width: 100%; }
 .field-type-datetime .date-combo .panel-body .form-item {
   width: 100%;
@@ -1902,6 +1919,14 @@ input[type="file"] { padding: 0; }
   display: inline-block;
   width: 100px;
   font-family: OpenSans-Semibold;
+}
+
+/* Create quote*/
+.page-node-add-testimonials #testimonials-node-form {
+  width: 45%;
+}
+.page-node-add-testimonials #testimonials-node-form .form-textarea {
+  max-height: 130px;
 }
 
 
