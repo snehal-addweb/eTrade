@@ -1141,11 +1141,12 @@ function _logintoboggan_process_redirect($redirect, $account) {
 
 /**
  * Implement hook_mail_alter().
+ * Added false in if condition (at line 1149) to stop mail alter while notifying admin on new registartion.
  */
 function logintoboggan_mail_alter(&$message) {
   if ($message['id'] == 'user_register_pending_approval_admin') {
     $reg_pass_set = !variable_get('user_email_verification', TRUE);
-    if ($reg_pass_set) {
+    if ($reg_pass_set && (false)) {
       $account = $message['params']['account'];
       $url_options = array('absolute' => TRUE);
       $language = $message['language'];
