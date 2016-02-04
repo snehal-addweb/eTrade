@@ -1146,11 +1146,12 @@ function logintoboggan_mail_alter(&$message) {
   if ($message['id'] == 'user_register_pending_approval_admin') {
     $reg_pass_set = !variable_get('user_email_verification', TRUE);
     if ($reg_pass_set) {
+      global $base_url;
       $account = $message['params']['account'];
       $url_options = array('absolute' => TRUE);
       $language = $message['language'];
       $langcode = isset($language) ? $language->language : NULL;
-      
+
       $preBody = '';
 
       if (!empty($message['body'])) {
@@ -1158,13 +1159,13 @@ function logintoboggan_mail_alter(&$message) {
           $preBody .= $value;
         }        
       }
-
+      
       unset($message['body']);
 
       $body = $preBody;
       $body .= t("\n\nThe user has automatically received the permissions of the LoginToboggan validating role. To give the user full site permissions, click the link below:\n\n!validation_url/admin\n\nAlternatively, you may visit their user account listed above and remove them from the validating role.", array('!validation_url' => logintoboggan_eml_validate_url($account, $url_options)), array('langcode' => $langcode));
 
-      $header = '<table class="tbl-lvl-1" style="max-width:800px; width:800px; margin:0 auto; border-spacing:0; border-collapse:collapse; font-family:Arial; font-size: 14px; border:none; "><tbody style="width:100%;"><tr class="header tr-lvl-1" style="display: inline-block; width: 100%; background-color: #08086b;"><td style="padding: 10px; width: 100%; display: inline-block;"><img src="[site:url]sites/default/files/logoNew.png" alt="Etrade" style=""></td></tr><tr class="Content tr-lvl-1" style="background-color: #F2F2F2;"><td style="padding: 10px;"><table class="table-lvl-2" style="border-spacing:0; border-collapse:collapse; border:none;width:100%;"><tr>';
+      $header = '<table class="tbl-lvl-1" style="max-width:800px; width:800px; margin:0 auto; border-spacing:0; border-collapse:collapse; font-family:Arial; font-size: 14px; border:none; "><tbody style="width:100%;"><tr class="header tr-lvl-1" style="display: inline-block; width: 100%; background-color: #08086b;"><td style="padding: 10px; width: 100%; display: inline-block;"><img src="'.$base_url.'/sites/default/files/logoNew.png" alt="Etrade" style=""></td></tr><tr class="Content tr-lvl-1" style="background-color: #F2F2F2;"><td style="padding: 10px;"><table class="table-lvl-2" style="border-spacing:0; border-collapse:collapse; border:none;width:100%;"><tr>';
 
       $footer = '</tr><tr style="display: inline-block; width: 100%; background-color: #08086b; color: #fff; margin:0; padding:0;"><td style="padding: 10px; width: 100%; display: inline-block; text-align: center; font-size: 13px;"><span style="color: #fff;">© 2016-2020 MatchSwift.com, All rights reserved</span></td></tr></tbody></table>';
 
