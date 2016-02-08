@@ -29,37 +29,26 @@ function etrade_order_accept($arg1, $arg2){
   $node_info = node_load($arg1);
   $node_info->field_another_user[LANGUAGE_NONE][0]['value'] = $another_user;
   
-  if (node_save($node_info)) {
+  $node_info = node_save($node_info);
   	
-  	//check if order is accepted through API or website
-  	if (isset($_GET['api']) && $_GET['api'] == 'Y') {
-  	  $result['status'] = '200'; 
-  	  $result['message'] = 'success'; 
-  	  return $result;
-  	}
-  	else {
+	//check if order is accepted through API or website
+	if (isset($_GET['api']) && $_GET['api'] == 'Y') {
+	  $result['status'] = '200'; 
+	  $result['message'] = 'success'; 
+	  print(json_encode($result)); exit;
+	}
+	else {
 
-  	  if($arg2 == 0){
-		$redirect = 'trade-details';
+	  if($arg2 == 0){
+			$redirect = 'trade-details';
 	  }
 	  else{
 	    $redirect = 'trade-details?page='. $arg2;
 	  }
 
-  	  drupal_goto($redirect);
-  	  drupal_set_message("Your request for order has been sent successfully");
-  	}
-  
-  }
-  else {
-  	//check if order is accepted through API or website
-  	if (isset($_GET['api']) && $_GET['api'] == 'Y') {
-  	  $result['status'] = '500'; 
-  	  $result['message'] = 'failed'; 
-  	  return $result;
-  	}
-  }
-  
+	  drupal_goto($redirect);
+	  drupal_set_message("Your request for order has been sent successfully");
+	} 
 }
 
 function etrade_misc_node_presave($node){
