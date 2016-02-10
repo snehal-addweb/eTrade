@@ -147,8 +147,10 @@ function etrade_misc_views_query_alter(&$view, &$query) {
 
 	// to alter query for trade orders views services
 	if(($view->name == 'orders') && (($view->current_display == 'services_3') || ($view->current_display == 'services_4'))) {
-	    $query->where['2']['conditions']['0']['value'] = $user->uid;
-	    $query->where['2']['conditions']['1']['value'][0] = $user->uid;
+		if (isset($_REQUEST['uid'])) {
+			$query->where['2']['conditions']['0']['value'] = $_REQUEST['uid'];
+	    	$query->where['2']['conditions']['1']['value'][0] = $_REQUEST['uid'];
+		}	    
 	}
 
 }
