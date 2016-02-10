@@ -1,0 +1,14 @@
+diff --git a/resources/user_resource.inc b/resources/user_resource.inc
+index 04801fb..3fb8041 100644
+--- a/resources/user_resource.inc
++++ b/resources/user_resource.inc
+@@ -336,7 +336,8 @@ function _user_resource_create($account) {
+   $form_state['programmed_bypass_access_check'] = FALSE;
+ 
+   // Ensure this is validated, as drupal_form_submit will not call validation.
+-  user_register_validate('user_register_form', $form_state);
++  $form_check = drupal_get_form('user_register_form');
++  user_register_validate($form_check, $form_state);
+   $errors = form_get_errors();
+   // If there are errors, then short circuit and return early.
+   if ($errors) {
