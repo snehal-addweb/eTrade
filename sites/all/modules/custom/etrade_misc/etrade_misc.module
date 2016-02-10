@@ -43,34 +43,14 @@ function etrade_order_accept($arg1, $arg2){
 			$redirect = 'trade-details';
 	  }
 	  else{
-	    $redirect = 'trade-details?page='. $arg2;
+	    $redirect = 'trade-details';
+	    //$redirect = 'trade-details?page='. $arg2;
+	    drupal_goto($redirect, array('query' => array('page' => $arg2)));
 	  }
 
 	  drupal_goto($redirect);
 	  drupal_set_message("Your request for order has been sent successfully");
 	} 
-}
-
-function etrade_misc_node_presave($node){
-	/*global $user;
-	if($node->type == 'user_profile'){
-		$user = user_load($user->uid);
-		if(in_array('administrator', $user->roles) || in_array('Manager', $user->roles)) {
-			return true;
-		}
-		else{
-			if(in_array('authenticated user', $user->roles)){
-				if(!empty($node->field_company_name[LANGUAGE_NONE]) && !empty($node->field_company_type[LANGUAGE_NONE]) && !empty($node->field_address_company[LANGUAGE_NONE]) && !empty($node->field_state[LANGUAGE_NONE]) && !empty($node->field_landline_no_of_company[LANGUAGE_NONE]) && !empty($node->field_tax_registration_no_[LANGUAGE_NONE]) && !empty($node->field_authorized_person[LANGUAGE_NONE]) && !empty($node->field_address_of_authorized_pers[LANGUAGE_NONE]) && !empty($node->field_phone_number[LANGUAGE_NONE]) && !empty($node->field_email_address[LANGUAGE_NONE]) && !empty($node->field_state[LANGUAGE_NONE][0]['city']) && !empty($node->field_state[LANGUAGE_NONE][0]['province']) && !empty($node->field_state[LANGUAGE_NONE][0]['country']) && !empty($node->field_state[LANGUAGE_NONE][0]['postal_code']) && (!empty($node->field_registration_certificate[LANGUAGE_NONE]) || !empty($node->field_address_proof_of_company[LANGUAGE_NONE]) || !empty($node->field_id_proof_of_authorized[LANGUAGE_NONE]))) {	
-					$user->field_profile_status1[LANGUAGE_NONE][0]['value'] = 1;
-					user_save($user);
-					}
-				else {
-					$user->field_profile_status1[LANGUAGE_NONE][0]['value'] = 0;
-					user_save($user);	
-				}
-			}
-		}
-	}*/
 }
 
 function etrade_misc_form_alter(&$form, &$form_state, $form_id) {	
@@ -86,8 +66,11 @@ function etrade_misc_form_alter(&$form, &$form_state, $form_id) {
  		$form['remember_me']['#title'] = 'Remember Me';
  	}
  	if($form_id == 'user_register_form'){
- 		$form['actions']['submit']['#value'] = 'Register Now';
+ 		//$form['actions']['submit']['#value'] = t('Register Now');
  		$form['account']['mail']['#title'] = 'Email';
+ 		if (arg(0) == 'api') { // You might have to update this line depending on the path to your API
+	      unset($form['captcha']);
+	    }
  	}
  	if($form_id == 'webform_client_form_5') {
  		$form['actions']['submit']['#value'] = 'Submit';
@@ -142,24 +125,6 @@ function etrade_misc_form_commodity_node_form_alter(&$form, $form_state, $form_i
 	        }
 	    }
 
-		/*$form['seller'] = array(
-	      '#type' => 'textfield',
-	      '#title' => t('Seller Name'),
-		  '#default_value' => $seller,
-		  '#weight' => 2,
-		  '#attributes' => array('readonly' => 'readonly'),
-		  '#prefix' => '<div class="group-user-profile-right">', '#suffix' => '</div>',
-	    );
-
-	    $form['buyer'] = array(
-	      '#type' => 'textfield',
-	      '#title' => t('Buyer Name'),
-		  '#default_value' => $buyer,
-		  '#weight' => 2,
-		  '#attributes' => array('readonly' => 'readonly'),
-		  '#prefix' => '<div class="group-user-profile-right">', '#suffix' => '</div>',
-	    ); */
-
 	    $form['field_buyer_commission']['#prefix'] = '<div class="buyer-name"> <span>Buyer Name:</span>' . $buyer . '</div>';
 	    $form['field_buyer_commission']['#prefix'] .= '<div class="seller-name"> <span>Seller Name:</span>' . $seller . '</div>';
 	    
@@ -187,4 +152,3 @@ function etrade_misc_views_query_alter(&$view, &$query) {
 	}
 
 }
-
