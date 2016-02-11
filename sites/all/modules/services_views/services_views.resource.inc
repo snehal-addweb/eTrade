@@ -153,6 +153,8 @@ function services_views_execute_view($view_info, $view = NULL, $display_id = NUL
 
         // Create helper variables
         $output[$index]->$target_key = array();
+        if($field->field_info['cardinality'] == 1)
+          $output[$index]->$target_key = '';
         $obj = &$output[$index]->$target_key;
         $format = ($field->options['type'] == 'services') ? 'raw' : 'rendered';
 
