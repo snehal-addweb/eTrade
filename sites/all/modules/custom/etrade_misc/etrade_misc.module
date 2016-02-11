@@ -154,3 +154,38 @@ function etrade_misc_views_query_alter(&$view, &$query) {
 	}
 
 }
+function etrade_misc_node_presave($node) {
+	//if(($node->field_buyer_commission['und'][0]['value'] != $node->original->field_buyer_commission['und'][0]['value']) && ($node->field_seller_commission['und'][0]['value'] != $node->original->field_seller_commission['und'][0]['value'])) {
+	if(1) {
+
+	  	$changed = $node->changed;
+	  	$nid = $node->nid;
+		
+		$dompdf_lib_path = function_exists('libraries_get_path') ? libraries_get_path('dompdf') : 'sites/all/libraries/dompdf';
+ 		$dompdf_platform = $dompdf_lib_path . '/dompdf_config.inc.php';
+ 		
+		require_once($dompdf_platform);
+		$html = 'content'; // you may add your content here
+		$dompdf = new DOMPDF;
+		$dompdf->load_html($html);
+		$dompdf->render();
+		$pdfoutput = $dompdf->output();
+
+		// This does not save the pdf field and instead it opens a dialog box asking whether you have to save the pdf or not
+		#$dompdf->stream("sample.pdf");
+	
+
+		//  Checks whether there is an output folder inside sites/default/files
+		if (!is_dir('public://contract')) {
+		  mkdir("public://contract", 0777);
+
+		    //  Creates a folder and changes its permissions}
+		    $filename = "sites/default/files/contract/contract_{$changed}_{$nid}.pdf";
+		    $fp = fopen($filename, "w+");
+		    fwrite($fp, $pdfoutput);
+		    
+		    //  Writes the pdf output to a file
+		    fclose($fp);
+		}
+	}
+}
