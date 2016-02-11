@@ -1,0 +1,14 @@
+diff --git a/sites/all/modules/services_views/services_views.resource.inc b/sites/all/modules/services_views/services_views.resource.inc
+From: mgomma90@gmail.com (mgomma)
+index 6ff2e3f..b272829 100755
+--- a/sites/all/modules/services_views/services_views.resource.inc
++++ b/sites/all/modules/services_views/services_views.resource.inc
+@@ -153,6 +153,8 @@ function services_views_execute_view($view_info, $view = NULL, $display_id = NUL
+ 
+         // Create helper variables
+         $output[$index]->$target_key = array();
++        if($field->field_info['cardinality'] == 1)
++          $output[$index]->$target_key = '';
+         $obj = &$output[$index]->$target_key;
+         $format = ($field->options['type'] == 'services') ? 'raw' : 'rendered';
+ 
