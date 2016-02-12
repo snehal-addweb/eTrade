@@ -17,6 +17,13 @@ function etrade_misc_menu() {
 		'access arguments' => array('access content'),
   );
 
+  $items['custom-api/flag'] = array(
+	  'title' => t('Update Flag'),
+		'description' => 'To update flag',
+		'page callback' => 'etrade_flag_update',
+		'access arguments' => array('access content'),
+  );
+
   return $items;
 }
 
@@ -51,6 +58,36 @@ function etrade_order_accept($arg1, $arg2){
 	  drupal_goto($redirect);
 	  drupal_set_message("Your request for order has been sent successfully");
 	} 
+}
+
+/**
+ * To update flag values throug api
+ *
+ */
+function etrade_flag_update() {
+
+	$data = json_decode(file_get_contents('php://input'), true);
+
+	if (isset($data['flag_name']) && isset($data['action']) && isset($data['entity_id']) && isset($data['uid'])) {
+		
+		$flag = flag_get_flag($data['flag_name']);
+ 		$flag->flag($data['action'], $data['entity_id'], user_load($data['uid']), TRUE);
+
+ 		if (!empty($flag)) {
+ 			$result['status'] = 200;
+ 			$result['message'] = 'success';
+ 		}
+ 		else {
+ 			$result['status'] = 204;
+ 			$result['message'] = 'failure';
+ 		}
+	}
+	else {
+		$result['status'] = 400;
+ 		$result['message'] = 'Parameter Missing';
+	}
+
+ 	print(json_encode($result)); exit;
 }
 
 function etrade_misc_form_alter(&$form, &$form_state, $form_id) {	
