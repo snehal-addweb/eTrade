@@ -209,13 +209,14 @@ function etrade_misc_node_presave($node) {
 		}
 
 		$seller_name = $seller->name;
-		$seller_address = $seller_node->field_address_of_authorized_pers['und'][0]['value'];
+		$seller_address = $seller_node->field_address_company['und'][0]['value'];
+		$seller_autho_person_address = $seller_node->field_address_of_authorized_pers['und'][0]['value'];
 		$buyer_name = $buyer->name;
-		$buyer_address = $buyer_node->field_address_of_authorized_pers['und'][0]['value'];
+		$buyer_address = $buyer_node->field_address_company['und'][0]['value'];
+		$buyer_autho_person_address = $buyer_node->field_address_of_authorized_pers['und'][0]['value'];
 
 		$commodity_name = $node->title;
 		$quantity = $node->field_total_quantity['und'][0]['value'];
-		$price = $node->field_price_per_metric_ton['und'][0]['value'];
 		$price = $node->field_price_per_metric_ton['und'][0]['value'];
 		$seller_brokerage = $node->field_seller_commission['und'][0]['value'];
 		$buyer_brokerage = $node->field_buyer_commission['und'][0]['value']; 
@@ -227,8 +228,23 @@ function etrade_misc_node_presave($node) {
 			$name_of_agency = $node->field_name_of_the_agency['und'][0]['value'];
 		}
 
-		$seller_sign = 'seller_sign';
-		$buyer_sign = 'buyer_sign';
+		$price_type = $node->field_price_type['und'][0]['value'];
+		$latest_loading_date = $node->field_latest_loading_date['und'][0]['value'];
+		
+		$load_port = "";
+		foreach($node->field_load_port['und'] as $index => $info) {
+			$load_port .= $info['value'] . ", ";
+		}
+		$load_port = rtrim($load_port, ", ");
+
+		$delivery_port = "";		
+		foreach($node->field_delivery_port['und'] as $index => $info) {
+			$delivery_port = $info['value'] . ", ";
+		}
+		$delivery_port = rtrim($delivery_port, ", ");
+
+		$seller_sign = '';
+		$buyer_sign = '';
 
 		$html = str_replace("##COMMODITY_TYPE##", $commodity_type, $html);
 		$html = str_replace("##COMMODITY_LIST_NAME##", $commodity_list_name, $html);
@@ -245,6 +261,14 @@ function etrade_misc_node_presave($node) {
 		$html = str_replace("##QUALITY_SPECIFICATIONS##", $quality_specification, $html); 
 		$html = str_replace("##CERTIFICATE##", $certificate, $html); 
 		$html = str_replace("##NAME_OF_AGENCY##", $name_of_agency, $html); 
+
+		$html = str_replace("##PRICE_TYPE##", $price_type, $html); 
+		$html = str_replace("##LATEST_LOADING_DATE##", $latest_loading_date, $html); 
+		$html = str_replace("##LOAD_PORT##", $load_port, $html); 
+		$html = str_replace("##DELIVERY_PORT##", $delivery_port, $html); 
+		$html = str_replace("##BUYER_AUTHO_PERSON_ADDRESS##", $buyer_autho_person_address, $html); 
+		$html = str_replace("##SELLER_AUTHO_PERSON_ADDRESS##", $seller_autho_person_address, $html); 
+
 		$html = str_replace("##SELLER_SIGN##", $seller_sign, $html); 
 		$html = str_replace("##BUYER_SIGN##", $buyer_sign, $html);
  
