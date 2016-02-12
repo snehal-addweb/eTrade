@@ -155,9 +155,7 @@ function etrade_misc_views_query_alter(&$view, &$query) {
 
 }
 function etrade_misc_node_presave($node) {
-	//if(($node->field_buyer_commission['und'][0]['value'] != $node->original->field_buyer_commission['und'][0]['value']) && ($node->field_seller_commission['und'][0]['value'] != $node->original->field_seller_commission['und'][0]['value'])) {
-	if(1) {
-
+	if(($node->field_buyer_commission['und'][0]['value'] != $node->original->field_buyer_commission['und'][0]['value']) && ($node->field_seller_commission['und'][0]['value'] != $node->original->field_seller_commission['und'][0]['value'])) {
 	  	$changed = $node->changed;
 	  	$nid = $node->nid;
 		
@@ -165,7 +163,91 @@ function etrade_misc_node_presave($node) {
  		$dompdf_platform = $dompdf_lib_path . '/dompdf_config.inc.php';
  		
 		require_once($dompdf_platform);
-		$html = 'content'; // you may add your content here
+		$term_contract = taxonomy_term_load(25);
+		$html = $term_contract->description;
+ 
+		$commodity_type = $node->field_commodity_type['und'][0]['value'];
+		$commodity = taxonomy_term_load($node->field_commodity['und'][0]['tid']);
+		$commodity_list_name = $commodity->name;
+
+		$current_date = date('d-m-Y h:i:s');
+
+		$another_user = $node->field_another_user['und'][0]['value'];
+		$user_id = $node->uid;
+		if($commodity_type == 0) { //For Buy Commodity Type
+			$buyer = user_load($user_id);
+			$seller = user_load($another_user);
+		}
+		else {                     //For Sell Commodity Type
+			$buyer = user_load($another_user);
+			$seller = user_load($user_id);			
+		}
+		// Buyer Address
+		$queryBuyer = new EntityFieldQuery();
+		$entitiesBuyer = $queryBuyer->entityCondition('entity_type', 'node')
+						->propertyCondition('type', 'user_profile')
+						->propertyCondition('uid',  $buyer->uid, '=')
+						->propertyCondition('status', 1)
+						->range(0,1)
+						->execute();
+
+		if (!empty($entitiesBuyer['node'])) {
+			$buyer_node = node_load(array_shift(array_keys($entitiesBuyer['node'])));
+		}
+
+		// Seller Address
+		$querySeller = new EntityFieldQuery();
+		$entitiesSeller = $querySeller->entityCondition('entity_type', 'node')
+						->propertyCondition('type', 'user_profile')
+						->propertyCondition('uid',  $seller->uid, '=')
+						->propertyCondition('status', 1)
+						->range(0,1)
+						->execute();
+
+		if (!empty($entitiesSeller['node'])) {
+			$seller_node = node_load(array_shift(array_keys($entitiesSeller['node'])));
+		}
+
+		$seller_name = $seller->name;
+		$seller_address = $seller_node->field_address_of_authorized_pers['und'][0]['value'];
+		$buyer_name = $buyer->name;
+		$buyer_address = $buyer_node->field_address_of_authorized_pers['und'][0]['value'];
+
+		$commodity_name = $node->title;
+		$quantity = $node->field_total_quantity['und'][0]['value'];
+		$price = $node->field_price_per_metric_ton['und'][0]['value'];
+		$price = $node->field_price_per_metric_ton['und'][0]['value'];
+		$seller_brokerage = $node->field_seller_commission['und'][0]['value'];
+		$buyer_brokerage = $node->field_buyer_commission['und'][0]['value']; 
+
+		$quality_specification = $node->field_quality_specification_and_['und'][0]['value'];
+		$certificate = $node->field_quality_assaying['und'][0]['value'];
+		$name_of_agency = "-";
+		if($certificate == 0 && !empty($node->field_name_of_the_agency['und'][0]['value'])) {			
+			$name_of_agency = $node->field_name_of_the_agency['und'][0]['value'];
+		}
+
+		$seller_sign = 'seller_sign';
+		$buyer_sign = 'buyer_sign';
+
+		$html = str_replace("##COMMODITY_TYPE##", $commodity_type, $html);
+		$html = str_replace("##COMMODITY_LIST_NAME##", $commodity_list_name, $html);
+		$html = str_replace("##CURRENT_DATE##", $current_date, $html);
+		$html = str_replace("##SELLER_NAME##", $seller_name, $html);
+		$html = str_replace("##SELLER_ADDRESS##", $seller_address, $html);
+		$html = str_replace("##BUYER_NAME##", $buyer_name, $html);
+		$html = str_replace("##BUYER_ADDRESS##", $buyer_address, $html);
+		$html = str_replace("##COMMODITY_NAME##", $commodity_name, $html);
+		$html = str_replace("##QUANTITY##", $quantity, $html);
+		$html = str_replace("##PRICE##", $price, $html); 
+		$html = str_replace("##SELLER_BROKERAGE##", $seller_brokerage, $html); 
+		$html = str_replace("##BUYER_BROKERAGE##", $buyer_brokerage, $html); 
+		$html = str_replace("##QUALITY_SPECIFICATIONS##", $quality_specification, $html); 
+		$html = str_replace("##CERTIFICATE##", $certificate, $html); 
+		$html = str_replace("##NAME_OF_AGENCY##", $name_of_agency, $html); 
+		$html = str_replace("##SELLER_SIGN##", $seller_sign, $html); 
+		$html = str_replace("##BUYER_SIGN##", $buyer_sign, $html);
+ 
 		$dompdf = new DOMPDF;
 		$dompdf->load_html($html);
 		$dompdf->render();
@@ -174,18 +256,18 @@ function etrade_misc_node_presave($node) {
 		// This does not save the pdf field and instead it opens a dialog box asking whether you have to save the pdf or not
 		#$dompdf->stream("sample.pdf");
 	
-
 		//  Checks whether there is an output folder inside sites/default/files
 		if (!is_dir('public://contract')) {
 		  mkdir("public://contract", 0777);
-
-		    //  Creates a folder and changes its permissions}
-		    $filename = "sites/default/files/contract/contract_{$changed}_{$nid}.pdf";
-		    $fp = fopen($filename, "w+");
-		    fwrite($fp, $pdfoutput);
-		    
-		    //  Writes the pdf output to a file
-		    fclose($fp);
 		}
+
+	    //  Creates a folder and changes its permissions}
+	    $filename = "sites/default/files/contract/contract_{$nid}.pdf";
+	    $fp = fopen($filename, "w+");
+	    fwrite($fp, $pdfoutput);
+	    
+	    //  Writes the pdf output to a file
+	    fclose($fp);
+	
 	}
 }
