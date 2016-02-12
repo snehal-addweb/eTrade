@@ -259,14 +259,15 @@ function etrade_misc_node_presave($node) {
 		//  Checks whether there is an output folder inside sites/default/files
 		if (!is_dir('public://contract')) {
 		  mkdir("public://contract", 0777);
-
-		    //  Creates a folder and changes its permissions}
-		    $filename = "sites/default/files/contract/contract_{$changed}_{$nid}.pdf";
-		    $fp = fopen($filename, "w+");
-		    fwrite($fp, $pdfoutput);
-		    
-		    //  Writes the pdf output to a file
-		    fclose($fp);
 		}
+
+	    //  Creates a folder and changes its permissions}
+	    $filename = "sites/default/files/contract/contract_{$changed}_{$nid}.pdf";
+	    $fp = fopen($filename, "w+");
+	    fwrite($fp, $pdfoutput);
+	    
+	    //  Writes the pdf output to a file
+	    fclose($fp);
+	
 	}
 }
