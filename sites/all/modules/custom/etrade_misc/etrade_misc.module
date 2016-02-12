@@ -262,7 +262,7 @@ function etrade_misc_node_presave($node) {
 		}
 
 	    //  Creates a folder and changes its permissions}
-	    $filename = "sites/default/files/contract/contract_{$changed}_{$nid}.pdf";
+	    $filename = "sites/default/files/contract/contract_{$nid}.pdf";
 	    $fp = fopen($filename, "w+");
 	    fwrite($fp, $pdfoutput);
 	    
