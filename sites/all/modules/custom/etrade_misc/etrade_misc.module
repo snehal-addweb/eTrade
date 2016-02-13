@@ -5,9 +5,7 @@
  * Main file for the Etrade miscellaneous module, which containg logics for adding or alter node related functionality.
  * 
  * @ingroup etrade_misc
- */
-
-
+*/
 function etrade_misc_menu() {
   $items['order-accept/%/%'] = array(
 	  'title' => t('Accept Order'),
