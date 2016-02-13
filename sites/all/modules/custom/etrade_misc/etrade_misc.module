@@ -64,12 +64,10 @@ function etrade_order_accept($arg1, $arg2){
  */
 function etrade_flag_update() {
 
-	$data = json_decode(file_get_contents('php://input'), true);
-
-	if (isset($data['flag_name']) && isset($data['action']) && isset($data['entity_id']) && isset($data['uid'])) {
+	if (isset($_REQUEST['flag_name']) && isset($_REQUEST['action']) && isset($_REQUEST['entity_id']) && isset($_REQUEST['uid'])) {
 		
-		$flag = flag_get_flag($data['flag_name']);
- 		$flag->flag($data['action'], $data['entity_id'], user_load($data['uid']), TRUE);
+		$flag = flag_get_flag($_REQUEST['flag_name']);
+ 		$flag->flag($_REQUEST['action'], $_REQUEST['entity_id'], user_load($_REQUEST['uid']), TRUE);
 
  		if (!empty($flag)) {
  			$result['status'] = 200;
