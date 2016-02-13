@@ -217,9 +217,9 @@ $databases = array (
   array (
     'default' => 
     array (
-      'database' => 'addwebpr_etrade',
-      'username' => 'addwebpr_etrade',
-      'password' => 'addwebpr_etrade',
+      'database' => 'addwebpr_matchswift',
+      'username' => 'addwebpr_mswift',
+      'password' => '*Mi(y@d]-$RE',
       'host' => 'localhost',
       'port' => '',
       'driver' => 'mysql',
