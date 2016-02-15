@@ -283,8 +283,8 @@ a:focus { outline: none; }
   margin: 0 0 20px 0;
 }
 .logged-in .md-slide-wrap {
-  max-height: 300px !important;
-  width: 100%;
+  /*max-height: 300px !important;
+  width: 100%;*/
 }
 .logged-in #block-md-slider-home-page-slider img {
 }
