@@ -357,7 +357,7 @@ function _user_resource_create($account) {
   else {
     $user = array('uid' => $form_state['user']->uid);
     if ($uri = services_resource_uri(array('user', $user['uid']))) {
-      $user['uri'] = $uri;
+      //$user['uri'] = $uri;
     }
     _user_resource_update_services_user($user['uid'], time());
     return $user;
