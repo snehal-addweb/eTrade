@@ -283,8 +283,8 @@ a:focus { outline: none; }
   margin: 0 0 20px 0;
 }
 .logged-in .md-slide-wrap {
-  max-height: 300px !important;
-  width: 100%;
+  /*max-height: 300px !important;
+  width: 100%;*/
 }
 .logged-in #block-md-slider-home-page-slider img {
 }
@@ -1938,6 +1938,26 @@ input[type="file"] { padding: 0; }
 .page-node-add-testimonials #testimonials-node-form .form-textarea {
   max-height: 130px;
 }
+
+/* Contact us */
+#block-block-8 {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  display: inline-block;
+  margin: 0 15px;
+  padding: 10px;
+  width: 100%;
+  max-width: 412px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  
+
+}
+#block-block-8 h2 {
+  font-size: 26px;
+}
+
 
 
 /**
