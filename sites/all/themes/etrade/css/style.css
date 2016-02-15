@@ -63,7 +63,7 @@ a:focus { outline: none; }
   width: 100%;
   margin: 0;
   padding: 0;
-  border: none;
+  border-top: 10px solid #E30E2B;
   background-color: #FFF;
   color: #1a3b8f;
   vertical-align: top;
@@ -507,6 +507,7 @@ a:focus { outline: none; }
   display: inline-block;
   width: 100%;
   margin-top: 0;
+  border-top: 10px solid #E30E2B;
   background-color: #FFF;
   color: #1a3b8f;
 }
