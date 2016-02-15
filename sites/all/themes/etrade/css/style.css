@@ -242,8 +242,8 @@ a:focus { outline: none; }
  */
 .page-home .page-header { display: none; }
 .home-slider-form {
-  display: inline-block;  
-  width: 100%;
+  /*display: inline-block;  
+  width: 100%;*/
 }
 .page-home #block-md-slider-home-page-slider,
 .page-home .custom-grid .panels-flexible-region-first {
