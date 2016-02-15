@@ -64,9 +64,8 @@ a:focus { outline: none; }
   margin: 0;
   padding: 0;
   border: none;
-  /*background-color: #284473;*/
-  background-color: #08086b;
-  color: #fff;
+  background-color: #FFF;
+  color: #1a3b8f;
   vertical-align: top;
   -webkit-border-radius: 0;
      -moz-border-radius: 0;
@@ -76,13 +75,15 @@ a:focus { outline: none; }
   float: left;
   display: inline-block;
   width: 100%;
-  max-width: 300px;
+  max-width: 382px;
 }
 #navbar .region-top-header {
   float: left;
-  width: calc(100% - 300px);
-  padding: 60px 50px;
-  color: rgba(255, 255, 255, 0.5);
+  width: -webki-calc(100% - 382px);
+  width:   -moz-calc(100% - 382px);
+  width:        calc(100% - 382px);
+  padding: 40px 50px;
+  color: #1a3b8f;
   font-family: OpenSans-Italic;
   font-size: 16px;
 }
@@ -98,7 +99,7 @@ a:focus { outline: none; }
   background: -webkit-linear-gradient(top, #c10d3d 0%,#a00934 100%);
   background: linear-gradient(to bottom, #c10d3d 0%,#a00934 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c10d3d', endColorstr='#a00934',GradientType=0 );*/
-  background-color: #e71029;
+  background-color: #E30E2B;
   color: #fff;
 }
 #navbar .navbar-collapse > nav {
@@ -118,7 +119,7 @@ a:focus { outline: none; }
 }
 .tb-megamenu .nav-collapse,
 .tb-megamenu .dropdown-menu {
-  background-color: #e71029;
+  background-color: #E30E2B;
   color: #fff;
 }
 .tb-megamenu .dropdown-menu {
@@ -181,7 +182,7 @@ a:focus { outline: none; }
   display: inline-block;
   width: 100%;
   padding: 7px 0;
-  background-color: #E71029;
+  background-color: #E30E2B;
   text-align: center;
   color: #fff;
   vertical-align: top;
@@ -443,7 +444,7 @@ a:focus { outline: none; }
 .get-a-qoute .pane-title {
   padding: 20px 20px 10px;
   margin: 0;
-  background-color: #08086b;
+  background-color: #1a3b8f;
   color: #fff;
   font-family: Arial;
   font-size: 26px;
@@ -451,7 +452,7 @@ a:focus { outline: none; }
 }
 .get-a-qoute .pane-content {
   padding: 20px;
-  background-color: #08086b;
+  background-color: #1a3b8f;
 }
 .get-a-qoute label { display: none; }
 .get-a-qoute .pane-content input {
@@ -506,8 +507,8 @@ a:focus { outline: none; }
   display: inline-block;
   width: 100%;
   margin-top: 0;
-  background-color: #08086b;
-  color: #e3eaf0;
+  background-color: #FFF;
+  color: #1a3b8f;
 }
 .footer a:before {
   display: inline-block;
@@ -522,7 +523,7 @@ a:focus { outline: none; }
   content: "";
 }
 .footer a {
-  color: #e2eaf2;
+  color: #1a3b8f;
 }
 .footer .nav > li > a {
   display: inline-block;
@@ -552,11 +553,11 @@ a:focus { outline: none; }
 }
 .footer #block-block-5{
   float: left;
-  width: 30%;
+  width: 40%;
 }
 .footer #block-menu-menu-footer-link-1 {
   float: left;
-  width: 70%;
+  width: 60%;
 }
 .footer #block-menu-menu-footer-link-1 li {
   float: left;
@@ -636,7 +637,7 @@ em {
   text-transform: uppercase;
 }
 .red-text {
-  color: #E71029;
+  color: #E30E2B;
   padding-right: 10px;
 }
 /* End */
@@ -743,7 +744,7 @@ input[type="file"] + .input-group-btn button {
   padding: 6px 12px;
   margin: 3px 0;
   border: none;
-  background-color: #08086b;
+  background-color: #1a3b8f;
   color: #fff;
   font-family: OpenSans-Semibold;
   font-size: 15px;
@@ -776,7 +777,7 @@ input[type="file"] + .input-group-btn button {
 .btn-default:focus,
 .btn-default:active,
 .btn-danger:active {
-  background-color: #08086b !important;
+  background-color: #1a3b8f !important;
   color: #fff !important;
   outline: none;
   opacity: 0.8;
@@ -786,7 +787,7 @@ input[type="file"] + .input-group-btn button {
 .btn-danger:focus,
 .btn-danger:hover,
 .btn-danger:active {
-  background-color: #08086b !important;
+  background-color: #1a3b8f !important;
 }
 .btn-success.disabled,
 .btn-success[disabled],
@@ -794,7 +795,7 @@ input[type="file"] + .input-group-btn button {
 .btn-success:focus,
 .btn-success:hover,
 .btn-success:active {
-  background-color: #08086b !important;
+  background-color: #1a3b8f !important;
 }
 
 .form-type-password-confirm > label,
@@ -872,10 +873,10 @@ input[type="file"] + .input-group-btn button {
           box-shadow: 1px 0 0 0 rgba(0, 0, 0, 0.2);
 }
 .ctools-auto-submit-full-form .form-radios .form-type-radio:nth-child(2) label {
-  background-color: #08086b;
+  background-color: #1a3b8f;
 }
 .ctools-auto-submit-full-form .form-radios .form-type-radio:nth-child(3) label {
-  background-color: #e71029;
+  background-color: #E30E2B;
 }
 .ctools-auto-submit-full-form .form-radios .form-type-radio.active {}
 .ctools-auto-submit-full-form .form-radios .form-type-radio .input-rc {
@@ -1207,7 +1208,7 @@ input[type="file"] { padding: 0; }
   font-size: 24px;
 }
 .view-countrywise-commodities .view-content table .views-field-delete-node a {
-  color: #e71029;
+  color: #E30E2B;
 }
 
 /* Buy and sell container design */
@@ -1221,11 +1222,13 @@ input[type="file"] { padding: 0; }
   margin: 0;
 }
 .buy-main-container thead tr {
-  background-color: #29296b;
+  /*background-color: #29296b;*/
+  background-color: #1f45a7;
   color: #fff;
 }
 .sell-main-container thead tr {
-  background-color: #ff5d6d;
+  /*background-color: #ff5d6d;*/
+  background-color: #de2c44;
   color: #fff;
 }
 .buy-main-container thead tr th,
@@ -1267,10 +1270,10 @@ input[type="file"] { padding: 0; }
           box-shadow: 1px 0 0 0 rgba(0, 0, 0, 0.2);
 }
 .buy-main-container caption {
-  background-color: #08086b;
+  background-color: #1a3b8f;
 }
 .sell-main-container caption {
-  background-color: #e71029;
+  background-color: #E30E2B;
 }
 /* End */
 
@@ -1287,7 +1290,7 @@ input[type="file"] { padding: 0; }
   padding: 8px 12px;
   margin: 3px 0;
   border: none;
-  background-color: #08086b;
+  background-color: #1a3b8f;
   color: #fff;
   font-family: OpenSans-Semibold;
   font-size: 15px;
@@ -1395,7 +1398,7 @@ input[type="file"] { padding: 0; }
   padding: 5px 10px;
 }
 .main-grey-container .region-content .view-list-of-commodities .views-row a {
-  color: #08086b;
+  color: #1a3b8f;
   font-family: OpenSans-Semibold;
   font-size: 18px;
 }
@@ -1872,7 +1875,7 @@ input[type="file"] { padding: 0; }
   font-size: 11px;
 }
 .header-commodities .view-content .views-row .views-field-field-price-per-metric-ton {
-  color: #e71029;
+  color: #E30E2B;
   font-weight: bold;
 }
 
@@ -1893,7 +1896,7 @@ input[type="file"] { padding: 0; }
   margin-bottom: 7px;
 }
 .career-listing .ui-accordion .views-field-title {
-  background: #08086b;
+  background: #1a3b8f;
   border: none;
 }
 .career-listing .ui-accordion .views-field-title a {
@@ -1987,7 +1990,10 @@ input[type="file"] { padding: 0; }
 
 /* Tablet and i-pad landscape & portrait view */
 @media screen and (max-width: 1024px) {
-  
+  #navbar .region-top-header {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
 } /* 1024px */
 
 /* */
