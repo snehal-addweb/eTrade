@@ -82,7 +82,7 @@ a:focus { outline: none; }
   width: -webki-calc(100% - 382px);
   width:   -moz-calc(100% - 382px);
   width:        calc(100% - 382px);
-  padding: 40px 50px;
+  padding: 40px 70px;
   color: #1a3b8f;
   font-family: OpenSans-Italic;
   font-size: 16px;
@@ -1950,9 +1950,7 @@ input[type="file"] { padding: 0; }
   max-width: 412px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
-  border-radius: 4px;
-  
-
+  border-radius: 4px;  
 }
 #block-block-8 h2 {
   font-size: 26px;
@@ -2012,8 +2010,8 @@ input[type="file"] { padding: 0; }
 /* Tablet and i-pad landscape & portrait view */
 @media screen and (max-width: 1024px) {
   #navbar .region-top-header {
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
   }
 } /* 1024px */
 
