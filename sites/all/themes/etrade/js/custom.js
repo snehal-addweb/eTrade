@@ -63,7 +63,7 @@ jQuery(document).ready(function() {
   /* Header Slider */
     jQuery(".view-testimonials .view-content").owlCarousel({
       autoplay:true,
-      autoplayTimeout:2000,
+      autoplayTimeout:5000,
       infinite: true,
       direction: "left",
       items : 1,
