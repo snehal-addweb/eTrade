@@ -328,3 +328,36 @@ function etrade_misc_node_presave($node) {
 	
 	}
 }
+
+/**
+ * Allows alteration of the response when just the endpoint is requested.
+ *
+ * @param string $response
+ *   The text displayed to the user.
+ *
+ * @see RESTServer->handle()
+ */
+function etrade_misc_services_request_postprocess_alter($controller, $args, &$result) {
+
+	// check if called api is login
+	if (isset($controller['callback']) && ($controller['callback'] == '_user_resource_login') && (arg(0) == 'api')) {
+		// if user response is ready
+		if (isset($result->user) && !empty($result->user)) {
+			
+			$userDetail = $result->user;
+			$uid = $userDetail->uid;
+
+			//$nodes = node_load_multiple(array(), array('type' => 'user-profile', 'uid' => $uid)); 
+
+			$query_result = db_query("SELECT nid FROM node WHERE type = :nodeType AND uid = :uid LIMIT 1", array(':nodeType'=> 'user_profile', ':uid' => $uid));
+
+			$nid = '';
+			foreach ($query_result as $obj) {
+			  $nid = $obj->nid;
+			}
+
+			// added trade profile id in result
+			$result->pid = $nid;			
+		}
+	}
+}
