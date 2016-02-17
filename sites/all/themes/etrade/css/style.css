@@ -63,7 +63,7 @@ a:focus { outline: none; }
   width: 100%;
   margin: 0;
   padding: 0;
-  border: none;
+  border-top: 10px solid #E30E2B;
   background-color: #FFF;
   color: #1a3b8f;
   vertical-align: top;
@@ -82,7 +82,7 @@ a:focus { outline: none; }
   width: -webki-calc(100% - 382px);
   width:   -moz-calc(100% - 382px);
   width:        calc(100% - 382px);
-  padding: 40px 50px;
+  padding: 40px 70px;
   color: #1a3b8f;
   font-family: OpenSans-Italic;
   font-size: 16px;
@@ -283,8 +283,8 @@ a:focus { outline: none; }
   margin: 0 0 20px 0;
 }
 .logged-in .md-slide-wrap {
-  max-height: 300px !important;
-  width: 100%;
+  /*max-height: 300px !important;
+  width: 100%;*/
 }
 .logged-in #block-md-slider-home-page-slider img {
 }
@@ -507,6 +507,7 @@ a:focus { outline: none; }
   display: inline-block;
   width: 100%;
   margin-top: 0;
+  border-top: 10px solid #E30E2B;
   background-color: #FFF;
   color: #1a3b8f;
 }
@@ -1938,6 +1939,24 @@ input[type="file"] { padding: 0; }
   max-height: 130px;
 }
 
+/* Contact us */
+#block-block-8 {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  display: inline-block;
+  margin: 0 15px;
+  padding: 10px;
+  width: 100%;
+  max-width: 412px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;  
+}
+#block-block-8 h2 {
+  font-size: 26px;
+}
+
+
 
 /**
  * Responsive design
@@ -1991,8 +2010,8 @@ input[type="file"] { padding: 0; }
 /* Tablet and i-pad landscape & portrait view */
 @media screen and (max-width: 1024px) {
   #navbar .region-top-header {
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
   }
 } /* 1024px */
 
