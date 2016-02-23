@@ -73,15 +73,24 @@ function etrade_country_wise_state_list() {
 		module_load_include('inc', 'addressfield', 'addressfield.administrative_areas');
 		$administrative_areas = addressfield_get_administrative_areas($_REQUEST['country']);
 		
+		$arrStates = array();
+		$i = 0;
+		if (!empty($administrative_areas)) {
+			foreach ($administrative_areas as $key => $value) {
+				$arrStates[$i]['code'] = $key;
+				$arrStates[$i]['name'] = $value;
+				$i++;
+			}
+		}
+
 		$result['status'] = 200;
-		$result['data'] = $administrative_areas;
-		
-		print(json_encode($result)); exit;				
+		$result['data'] = $arrStates;
 	}
 	else {
 		$result['status'] = 400;
  		$result['message'] = 'Parameter Missing';
 	}
+	print(json_encode($result)); exit;
 }
 
 /**
