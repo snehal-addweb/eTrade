@@ -8,18 +8,25 @@
 */
 function etrade_misc_menu() {
   $items['order-accept/%/%'] = array(
-	  'title' => t('Accept Order'),
-		'description' => 'User will accept order if he is intrested',
-		'page arguments' => array(1,2),
-		'page callback' => 'etrade_order_accept',
-		'access arguments' => array('access content'),
+	'title' => t('Accept Order'),
+	'description' => 'User will accept order if he is intrested',
+	'page arguments' => array(1,2),
+	'page callback' => 'etrade_order_accept',
+	'access arguments' => array('access content'),
   );
 
   $items['custom-api/flag'] = array(
-	  'title' => t('Update Flag'),
-		'description' => 'To update flag',
-		'page callback' => 'etrade_flag_update',
-		'access arguments' => array('access content'),
+	'title' => t('Update Flag'),
+	'description' => 'To update flag',
+	'page callback' => 'etrade_flag_update',
+	'access arguments' => array('access content'),
+  );
+
+  $items['custom-api/state-list'] = array(
+	'title' => t('State List'),
+	'description' => 'To get state list',
+	'page callback' => 'etrade_country_wise_state_list',
+	'access arguments' => array('access content'),
   );
 
   return $items;
@@ -56,6 +63,25 @@ function etrade_order_accept($arg1, $arg2){
 	  drupal_goto($redirect);
 	  drupal_set_message("Your request for order has been sent successfully");
 	} 
+}
+
+/**
+ * To get coutry wise state list
+ **/
+function etrade_country_wise_state_list() {
+	if (isset($_REQUEST['country']) && !empty($_REQUEST['country'])) {
+		module_load_include('inc', 'addressfield', 'addressfield.administrative_areas');
+		$administrative_areas = addressfield_get_administrative_areas($_REQUEST['country']);
+		
+		$result['status'] = 200;
+		$result['data'] = $administrative_areas;
+		
+		print(json_encode($result)); exit;				
+	}
+	else {
+		$result['status'] = 400;
+ 		$result['message'] = 'Parameter Missing';
+	}
 }
 
 /**
