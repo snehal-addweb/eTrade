@@ -465,6 +465,15 @@ a:focus { outline: none; }
      -moz-border-radius: 4px;
           border-radius: 4px;
 }
+.get-a-qoute .captcha img {
+  margin-bottom: 20px;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+.get-a-qoute .captcha .help-block {
+  color: #fff;
+}
 .get-a-qoute .pane-content .form-submit {
   background-color: #63B2F5;
 }
