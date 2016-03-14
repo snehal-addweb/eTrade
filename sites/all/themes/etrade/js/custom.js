@@ -1,4 +1,11 @@
 jQuery(document).ready(function() {
+  var numitems = jQuery('ul.tb-megamenu-nav li .tb-megamenu-submenu .view-content .views-row').length;
+  var remainder = Math.ceil(numitems / 7);
+  var totalSpace = 164 * remainder;
+  jQuery("ul.tb-megamenu-nav li .tb-megamenu-submenu .view-content").css("column-count", remainder);
+  //jQuery("ul.tb-megamenu-nav li .tb-megamenu-submenu .view-content").css("width","520");
+  jQuery("ul.tb-megamenu-nav > .tb-megamenu-item:nth-child(3) .tb-megamenu-submenu").css("width", totalSpace);
+
   jQuery('.navbar ul.menu').addClass("navbar-nav");
   // User Register Page Header design 
   jQuery('.page-user-register .main-white-header div.container .page-header').html( "<span class='red-text'>User</span>Account" );
