@@ -402,6 +402,49 @@ a:focus { outline: none; }
 /* End */
 
 
+/* Report page */
+.view-new-report .views-row .field-content img {
+  float: left;
+  margin: 10px;
+}
+.view-new-report .views-row .field-content a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #1A3B8F;
+}
+.view-new-report .views-row .field-content a.views-more-link {
+  margin: 0;
+  font-size: 15px;
+  background-color: transparent;
+  color: #337ab7;
+  border-radius: 0;
+  box-shadow: none;
+}
+.view-new-report .views-row .field-content a.views-more-link:hover {
+  box-shadow: none;
+  top: 0;
+  opacity: .5;
+}
+.view-new-report .views-row .field-content a.views-more-link:after {
+  background-image: none;
+  display: inline-block;
+  height: 10px;
+  margin: 0 0 0 5px;
+  width: 7px;
+}
+/* end */
+
+/* View more report page */
+
+.node-report img {
+  float: left;
+  display: inline-block;
+  margin: 10px;
+
+
+}
+
+/* end */
 
 /**
  * About Us and Get a Quote
