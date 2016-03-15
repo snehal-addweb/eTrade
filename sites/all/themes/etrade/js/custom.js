@@ -104,4 +104,14 @@ jQuery(document).ready(function() {
         });
     });
   });
+
+  /* Js fo Width in news slider */
+  jQuery("#block-views-lasted-news-block .simply-scroll-clip .simply-scroll-list li a").each(function() {
+        var event_up_w = jQuery(this).width();
+        var event_up_w_li = event_up_w + 36;
+        jQuery(this).parent().parent().parent("li").css("width",event_up_w_li);
+        /*jQuery(this).css("min-width",event_up_w);*/
+    });
 });
+
+
