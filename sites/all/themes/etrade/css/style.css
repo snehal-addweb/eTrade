@@ -1941,7 +1941,7 @@ input[type="file"] { padding: 0; }
 }
 
 /* Create quote*/
-.page-node-add-testimonials #testimonials-node-form {
+.page-node-add-testimonials #testimonials-node-form,#news-node-form, #report-node-form {
   width: 45%;
 }
 .page-node-add-testimonials #testimonials-node-form .form-textarea {
@@ -2241,6 +2241,11 @@ input[type="file"] { padding: 0; }
     width: 100%;
     margin: 0 0 20px 0;
   }
+  /* */
+  .page-node-add-testimonials #testimonials-node-form,
+  #news-node-form, #report-node-form {
+    width: 100%;
+  }
 
 } /* 767px */
 
@@ -2278,3 +2283,5 @@ input[type="file"] { padding: 0; }
     width: 100%;
   }
 } /* 480px */
+
+/* News page */
