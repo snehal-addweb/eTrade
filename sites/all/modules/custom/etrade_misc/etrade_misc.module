@@ -396,3 +396,18 @@ function etrade_misc_services_request_postprocess_alter($controller, $args, &$re
 		}
 	}
 }
+
+function etrade_misc_views_pre_build(&$view) {
+    if ($view->name == "lasted_news" && $view->current_display == "block") {   	
+        global $user;
+		if ($user->uid) {
+			$view->init_pager();
+            $view->set_items_per_page('5');
+		} 
+		if (!$user->uid) {
+			$view->init_pager();
+            $view->set_items_per_page('3');
+		} 
+
+    }
+}
