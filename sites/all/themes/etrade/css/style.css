@@ -403,9 +403,23 @@ a:focus { outline: none; }
 
 
 /* Report page */
-.view-new-report .views-row .field-content img {
-  float: left;
-  margin-right: 10px;
+.view-new-report .views-row {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin: 20px 0;
+  line-height: normal;
+}
+
+.view-new-report .views-row .views-field {
+  position: relative;
+  padding-left: 120px;
+}
+.view-new-report .views-row .views-field-field-image-report {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
 }
 .node-news .field img {
   float: left;
@@ -415,26 +429,20 @@ a:focus { outline: none; }
   text-decoration: none;
   font-size: 20px;
   color: #3B454E;
-  font-weight: bold;
+  font-family: OpenSans-Bold;
   text-transform: capitalize;
 }
-.view-new-report .views-row .field-content {
-  margin-top: 13px;
-  line-height: 10px;
-}
 .view-new-report .views-row .field-content a.views-more-link {
-  margin: 0;
+  display: block;
+  margin: 7px 0 0;
+  padding: 0;
   font-size: 15px;
   background-color: transparent;
   color: #337ab7;
   border-radius: 0;
   box-shadow: none;
 }
-.view-new-report .views-row .field-content a.views-more-link:hover {
-  box-shadow: none;
-  text-decoration: underline;
-  top: 0;
-}
+.view-new-report .views-row .field-content a.views-more-link:hover,
 .view-new-report .views-row .field-content a.views-more-link:focus {
   box-shadow: none;
   text-decoration: underline;
@@ -442,10 +450,9 @@ a:focus { outline: none; }
 }
 .view-new-report .views-row .field-content a.views-more-link:after {
   background-image: none;
-  display: inline-block;
-  height: 10px;
-  margin: 0 0 0 5px;
-  width: 7px;
+  /*display: inline-block;*/
+  display: none;
+  
 }
 /* end */
 
@@ -2461,5 +2468,18 @@ input[type="file"] { padding: 0; }
   .view-user-profile .views-field-view .views-field .views-label,
   .view-user-profile .views-field-view .views-field .field-content {
     width: 100%;
+  }
+
+  /* report page */
+  .view-new-report .views-row .views-field {
+    position: relative;
+    padding-left: 0;
+  }
+  .view-new-report .views-row .views-field-field-image-report {
+    margin-bottom: 10px;
+  }
+  .node-report img {
+    float: none;
+    margin-bottom: 10px;
   }
 } /* 480px */
