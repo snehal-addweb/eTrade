@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * etrade_reports_and_news.strongarm.inc
+ * etrade_news_and_reports.strongarm.inc
  */
 
 /**
  * Implements hook_strongarm().
  */
-function etrade_reports_and_news_strongarm() {
+function etrade_news_and_reports_strongarm() {
   $export = array();
 
   $strongarm = new stdClass();

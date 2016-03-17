@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * etrade_reports_and_news.features.field_instance.inc
+ * etrade_news_and_reports.features.field_instance.inc
  */
 
 /**
  * Implements hook_field_default_field_instances().
  */
-function etrade_reports_and_news_field_default_field_instances() {
+function etrade_news_and_reports_field_default_field_instances() {
   $field_instances = array();
 
   // Exported field_instance: 'node-news-body'.

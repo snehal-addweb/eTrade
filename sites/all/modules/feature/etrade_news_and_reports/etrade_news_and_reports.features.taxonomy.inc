@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * etrade_reports_and_news.features.taxonomy.inc
+ * etrade_news_and_reports.features.taxonomy.inc
  */
 
 /**
  * Implements hook_taxonomy_default_vocabularies().
  */
-function etrade_reports_and_news_taxonomy_default_vocabularies() {
+function etrade_news_and_reports_taxonomy_default_vocabularies() {
   return array(
     'commodity' => array(
       'name' => 'Commodity',

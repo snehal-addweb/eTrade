@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * etrade_reports_and_news.features.inc
+ * etrade_news_and_reports.features.inc
  */
 
 /**
  * Implements hook_ctools_plugin_api().
  */
-function etrade_reports_and_news_ctools_plugin_api($module = NULL, $api = NULL) {
+function etrade_news_and_reports_ctools_plugin_api($module = NULL, $api = NULL) {
   if ($module == "strongarm" && $api == "strongarm") {
     return array("version" => "1");
   }
@@ -16,14 +16,14 @@ function etrade_reports_and_news_ctools_plugin_api($module = NULL, $api = NULL) 
 /**
  * Implements hook_views_api().
  */
-function etrade_reports_and_news_views_api($module = NULL, $api = NULL) {
+function etrade_news_and_reports_views_api($module = NULL, $api = NULL) {
   return array("api" => "3.0");
 }
 
 /**
  * Implements hook_flag_default_flags().
  */
-function etrade_reports_and_news_flag_default_flags() {
+function etrade_news_and_reports_flag_default_flags() {
   $flags = array();
   // Exported flag: "News".
   $flags['news'] = array(
@@ -56,7 +56,7 @@ function etrade_reports_and_news_flag_default_flags() {
     'show_contextual_link' => 0,
     'i18n' => 0,
     'api_version' => 3,
-    'module' => 'etrade_reports_and_news',
+    'module' => 'etrade_news_and_reports',
     'locked' => array(
       0 => 'name',
     ),
@@ -92,7 +92,7 @@ function etrade_reports_and_news_flag_default_flags() {
     'show_contextual_link' => 0,
     'i18n' => 0,
     'api_version' => 3,
-    'module' => 'etrade_reports_and_news',
+    'module' => 'etrade_news_and_reports',
     'locked' => array(
       0 => 'name',
     ),
@@ -104,7 +104,7 @@ function etrade_reports_and_news_flag_default_flags() {
 /**
  * Implements hook_node_info().
  */
-function etrade_reports_and_news_node_info() {
+function etrade_news_and_reports_node_info() {
   $items = array(
     'news' => array(
       'name' => t('News'),

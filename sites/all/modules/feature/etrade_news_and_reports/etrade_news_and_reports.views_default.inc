@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * etrade_reports_and_news.views_default.inc
+ * etrade_news_and_reports.views_default.inc
  */
 
 /**
  * Implements hook_views_default_views().
  */
-function etrade_reports_and_news_views_default_views() {
+function etrade_news_and_reports_views_default_views() {
   $export = array();
 
   $view = new view();

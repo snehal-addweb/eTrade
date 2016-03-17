@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Etrade Reports and News feature.
- */
-
-include_once 'etrade_reports_and_news.features.inc';

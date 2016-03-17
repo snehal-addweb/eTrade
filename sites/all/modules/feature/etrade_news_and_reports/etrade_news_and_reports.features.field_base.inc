@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * etrade_reports_and_news.features.field_base.inc
+ * etrade_news_and_reports.features.field_base.inc
  */
 
 /**
  * Implements hook_field_default_field_bases().
  */
-function etrade_reports_and_news_field_default_field_bases() {
+function etrade_news_and_reports_field_default_field_bases() {
   $field_bases = array();
 
   // Exported field_base: 'field_commodity'.
