@@ -29,7 +29,62 @@ function etrade_misc_menu() {
 	'access arguments' => array('access content'),
   );
 
+  $items['api/custom-api/user-picture'] = array(
+	  'title' => t('User Picture'),
+		'description' => 'To get fid and set user picture',
+		'page arguments' => array(2),
+		'page callback' => '_etrade_misc_user_picture',
+		'access arguments' => array('access content'),
+	);
+
   return $items;
+}
+
+/**
+ * To update user picture throug api
+ *
+ */
+function _etrade_misc_user_picture(){
+	global $user;
+	$arg = arg(3); 
+	if ($arg == $user->uid) {
+		$existing = user_load($user->uid);
+
+		$edit = (array) $existing;
+        $picture = array();
+		if (isset($_REQUEST['fid']) && !empty($_REQUEST['fid'])) {
+			$fid = $_REQUEST['fid'];
+			$picture_object = file_load($fid);
+
+			
+            $picture['fid'] = $picture_object->fid;
+			$picture['uid'] = $picture_object->uid;
+			$picture['filename'] = $picture_object->filename;
+			$picture['uri'] = $picture_object->uri;
+			$picture['filemime'] = $picture_object->filemime;
+			$picture['filesize'] = $picture_object->filesize;
+			$picture['status'] = $picture_object->status;
+			$picture['timestamp'] = $picture_object->timestamp;
+			$picture['rdf_mapping'] = $picture_object->rdf_mapping; 
+			//use your cck field here
+			$existing->picture = (object) $picture; 
+                        
+                        $uid = $edit['uid'];
+                        unset($edit);
+                        $edit['picture'] = $uid;
+                        $edit['picture'] = $picture_object;
+			$user = user_save($existing, $edit);
+
+			$result['status'] = 200;
+ 			#$result['message'] = $existing;	
+
+		}
+		else {
+			$result['status'] = 400;
+ 			$result['message'] = 'Parameter Missing';		
+		}	
+	}
+	print(json_encode($result)); exit;
 }
 
 function etrade_order_accept($arg1, $arg2){
