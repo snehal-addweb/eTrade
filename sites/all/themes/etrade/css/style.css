@@ -1,4 +1,4 @@
-/**
+ƒ/**
  * This file should get overwritten if Method 1 is used. If Method 2 is chosen,
  * remove this comment and start adding your styles to this file.
  */
@@ -2145,7 +2145,13 @@ input[type="file"] { padding: 0; }
 #block-block-8 h2 {
   font-size: 26px;
 }
+/* End */ 
 
+/* Add/Edit Order Page */
+.form-item-field-trade-guarantee1-und {
+  display: none;
+}
+/* End */
 
 
 /**
